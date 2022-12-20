@@ -1,4 +1,6 @@
 loader:
+  template:
+    - styles_loader
   custom_fields:
     loader: >
       <img src="/local/loader.svg" width="100%">
@@ -17,19 +19,8 @@ loader:
             loader('loader', 'initial', 'none');
         }
       ]]]
-  styles:
-    custom_fields:
-      loader:
-        - display: none
-        - top: -6%
-        - right: -3.5%
-        - width: 52%
-        - position: absolute
-        - opacity: 0.5
-        - pointer-events: none
-        - filter: >
-            [[[
-              return variables.state_on
-                  ? 'none'
-                  : 'invert(1)';
-            ]]]
+      
+loader_centered:
+  template:
+    - loader
+    - styles_loader_centered

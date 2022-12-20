@@ -3,6 +3,7 @@ footer:
     - settings
     - tilt
     - extra_styles
+    - styles_footer
   variables:
     notify: >
       [[[
@@ -32,38 +33,6 @@ footer:
             return `<span style="font-weight: 900;">!</span>`;
         }
       ]]]
-  styles:
-    card:
-      - color: '#97989c'
-      - width: fit-content
-      - border: 0.12vw solid rgba(115, 115, 115, 0.2)
-      - transition: none
-      - padding: 0 0 0.05vw 0
-      - overflow: visible
-      - --mdc-ripple-color: rgba(0, 0, 0, 0.8)
-    custom_fields:
-      notify:
-        - display: >
-            [[[
-              if (Number.isInteger(variables.notify)) {
-                  return variables.notify > 0
-                      ? 'initial'
-                      : 'none';
-              }
-              else if (variables.notify) {
-                  return variables.notify
-                      ? 'initial'
-                      : 'none';
-              }
-            ]]]
-        - position: absolute
-        - font-weight: 700
-        - color: '#d6d6d6'
-        - background: '#8b3333'
-        - border-radius: 50%
-        - text-align: center
-        - text-overflow: unset
-        - z-index: 1
   tap_action:
     haptic: medium
   hold_action:

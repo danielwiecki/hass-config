@@ -1,0 +1,45 @@
+automation:
+  - id: motion_hallway
+    alias: Motion Light Flur
+    description: ''
+    trigger:
+    - type: motion
+      platform: device
+      device_id: dd69d967db29397b3ec1353246969feb
+      entity_id: binary_sensor.bewegungsmelder_flur
+      domain: binary_sensor
+    condition: []
+    action:
+    - service: light.turn_on
+      data:
+        transition: 2
+        brightness_pct: 100
+      target:
+        entity_id: light.flur
+    - wait_for_trigger:
+      - type: no_motion
+        platform: device
+        device_id: dd69d967db29397b3ec1353246969feb
+        entity_id: binary_sensor.bewegungsmelder_flur
+        domain: binary_sensor
+        for:
+          hours: 0
+          minutes: 0
+          seconds: 10
+    - choose:
+      - conditions:
+        - type: is_motion
+          condition: device
+          device_id: dd69d967db29397b3ec1353246969feb
+          entity_id: binary_sensor.bewegungsmelder_flur
+          domain: binary_sensor
+        sequence:
+        - stop: ''
+      - conditions: []
+        sequence:
+        - service: light.turn_off
+          data:
+            transition: 3
+          target:
+            entity_id: light.flur
+    mode: restart

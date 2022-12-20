@@ -1,0 +1,73 @@
+localtuya:
+  - host: 192.168.2.121
+    device_id: 01158006b8f0090079f7
+    local_key: 8876e5c53eac0248
+    friendly_name: Wifi Plug 1
+    protocol_version: "3.3"
+    entities:
+      - platform: sensor
+        device_class: power
+        friendly_name: Power Consumption 1
+        id: 19
+        scaling: 0.1
+        unit_of_measurement: "W"
+  - host: 192.168.2.223
+    device_id: 01158006b8f0090094e9
+    local_key: b4119db63819dd27
+    friendly_name: Wifi Plug 2
+    protocol_version: "3.3"
+    entities:
+      - platform: sensor
+        device_class: power
+        friendly_name: Power Consumption 2
+        id: 19
+        scaling: 0.1
+        unit_of_measurement: "W"
+  - host: 192.168.2.224
+    device_id: 33788026b8f009030eef
+    local_key: 507518ae129c1132
+    friendly_name: Wifi Plug 3
+    protocol_version: "3.3"
+    entities:
+      - platform: sensor
+        device_class: power
+        friendly_name: Power Consumption 3
+        id: 19
+        scaling: 0.1
+        unit_of_measurement: "W"
+  - host: 192.168.2.225
+    device_id: 01158006500291041367
+    local_key: f45a6d052298a0b6
+    friendly_name: Wifi Plug 4
+    protocol_version: "3.3"
+    entities:
+      - platform: sensor
+        device_class: power
+        friendly_name: Power Consumption 4
+        id: 19
+        scaling: 0.1
+        unit_of_measurement: "W"
+  - host: 192.168.2.226
+    device_id: 01158006b8f00900a392
+    local_key: efdcdc1317b606ad
+    friendly_name: Wifi Plug 5
+    protocol_version: "3.3"
+    entities:
+      - platform: sensor
+        device_class: power
+        friendly_name: Power Consumption 5
+        id: 19
+        scaling: 0.1
+        unit_of_measurement: "W"
+  - host: 192.168.2.227
+    device_id: 3378802610521cc81e94
+    local_key: 8dbe50f4083c24a7
+    friendly_name: Wifi Plug 6
+    protocol_version: "3.3"
+    entities:
+      - platform: sensor
+        device_class: power
+        friendly_name: Power Consumption 6
+        id: 19
+        scaling: 0.1
+        unit_of_measurement: "W"

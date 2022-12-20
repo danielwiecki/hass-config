@@ -1,0 +1,87 @@
+harmony:
+  template:
+    - base
+    - styles_harmony
+  show_name: false
+  show_state: false
+  show_icon: false
+  state_display: >
+    [[[ return '&nbsp;'; ]]]
+  tap_action:
+    action: none
+  hold_action: 
+    action: none
+  custom_fields:
+    harmony:
+      card:
+        type: 'custom:harmony-card'
+        entity: remote.harmony_hub
+        volume_device: 74701874
+        show_activities_icons: true
+        scale: 1.35
+        activities:
+          - name: PC Audio
+            device: 74701874
+            icon: mdi:television-off
+          - name: PC Video
+            device: LG TV
+            icon: mdi:television
+          - name: Kodi Video
+            device: Kodi
+            icon: mdi:kodi
+        card_mod:
+          style: |
+            :host {
+              height: 100%;
+            }
+            ha-card {
+              border: none;
+              height: 100%;
+            }
+            ha-card .card-content {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding: 0;
+            }
+            ha-card .activities {
+              justify-content: space-between;
+            }
+            ha-card .volume-controls {
+              justify-content: space-around;
+            }
+            ha-card ha-icon-button {
+              color: white;
+            }
+            ha-card .remote, ha-card .xbox-buttons, ha-card .play-pause {
+              display: none;
+            }
+    devices:
+      card:
+        type: grid
+        columns: 2
+        cards:
+        
+          - type: custom:button-card
+            entity: media_player.lg_webos_smart_tv
+            name: TV
+            tap_action: 
+              action: call-service
+              service: script.harmony_tv_toggle
+    #        double_tap_action:
+     #         !include ../popup/popup_lg_remote.yaml
+            template:
+              - icon_tv
+              - base_medium
+              - tilt-disabled
+              - loader_centered
+          
+          - type: custom:button-card
+            entity: switch.teufel
+            name: Teufel
+            template:
+              - icon_monitors
+              - base_medium
+              - tilt-disabled
+              - loader_centered

@@ -1,0 +1,36 @@
+automation:
+  - id: device_tracker_update_galaxy
+    alias: Device Tracker Update Galaxy
+    description: ''
+    trigger:
+    - platform: time_pattern
+      minutes: '/15'
+    condition: []
+    action:
+    - service: device_tracker.see
+      data:
+        dev_id: galaxy_s8
+    mode: single
+  - id: device_tracker_update_teufel
+    alias: Device Tracker Update Teufel
+    description: ''
+    trigger:
+      - platform: time_pattern
+        seconds: /30
+    condition:
+      - condition: not
+        conditions:
+          - condition: and
+            conditions:
+              - condition: state
+                entity_id: device_tracker.teufel_concept_e
+                attribute: source_type
+                state: bluetooth
+              - condition: state
+                entity_id: device_tracker.teufel_concept_e
+                state: home
+    action:
+      - service: script.teufel_update_state
+        data:
+          delay: 0
+    mode: single

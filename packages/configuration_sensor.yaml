@@ -1,0 +1,37 @@
+sensor:
+  - platform: integration
+    source: sensor.power_consumption_1
+    name: Power Consumption Total Desk Right
+    unit_prefix: k
+    round: 2
+    method: left
+  - platform: integration
+    source: sensor.power_consumption_2
+    name: Power Consumption Total Desk Left
+    unit_prefix: k
+    round: 2
+    method: left
+  - platform: integration
+    source: sensor.power_consumption_3
+    name: Power Consumption Total Lowboard Right
+    unit_prefix: k
+    round: 2
+    method: left
+  - platform: integration
+    source: sensor.power_consumption_4
+    name: Power Consumption Total Lowboard Left
+    unit_prefix: k
+    round: 2
+    method: left
+  - platform: integration
+    source: sensor.power_consumption_5
+    name: Power Consumption Total Aircooler
+    unit_prefix: k
+    round: 2
+    method: left
+  - platform: integration
+    source: sensor.power_consumption_6
+    name: Power Consumption Total Kaffeeautomat
+    unit_prefix: k
+    round: 2
+    method: left

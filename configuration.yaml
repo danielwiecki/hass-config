@@ -1,70 +1,40 @@
 homeassistant:
-  name: Hem
-  latitude: !secret homeassistant_latitude
-  longitude: !secret homeassistant_longitude
-  elevation: !secret homeassistant_elevation
   unit_system: metric
   temperature_unit: C
-  time_zone: Europe/Stockholm
-  country: SE
-  currency: SEK
+  time_zone: Europe/Berlin
+  country: DE
+  currency: EUR
   packages: !include_dir_named packages
-  customize_domain:
-    automation:
-      initial_state: true
-  allowlist_external_dirs:
-    - /config
 
+sun:
+wake_on_lan:
 default_config:
+tts:
+  - platform: google_translate
 
 frontend: !include themes.yaml
-template: !include sidebar.yaml
 
 lovelace:
   mode: yaml
   resources:
     [
-      { url: /hacsfiles/apexcharts-card/apexcharts-card.js,                         type: module },
-      { url: /hacsfiles/bar-card/bar-card.js,                                       type: module },
       { url: /hacsfiles/button-card/button-card.js,                                 type: module },
-      { url: /hacsfiles/custom-icons/custom-icons.js,                               type: module },
       { url: /hacsfiles/lovelace-layout-card/layout-card.js,                        type: module },
-      { url: /hacsfiles/lovelace-more-info-card/more-info-card.js,                  type: module },
-      { url: /hacsfiles/lovelace-mushroom/mushroom.js,                              type: module },
-      { url: /hacsfiles/lovelace-slider-entity-row/slider-entity-row.js,            type: module },
-      { url: /hacsfiles/lovelace-xiaomi-vacuum-map-card/xiaomi-vacuum-map-card.js,  type: module },
       { url: /hacsfiles/swipe-card/swipe-card.js,                                   type: module },
-      { url: /hacsfiles/tabbed-card/tabbed-card.js,                                 type: module },
+      { url: /hacsfiles/upcoming-media-card/upcoming-media-card.js,                 type: module },
+      { url: /hacsfiles/lovelace-mushroom/mushroom.js,                              type: module },
+      { url: /hacsfiles/bar-card/bar-card.js,                                       type: module },
+      { url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js,                  type: module },
+      { url: /hacsfiles/scheduler-card/scheduler-card.js,                           type: module },
+      { url: /hacsfiles/weather-card/weather-card.js,                               type: module },
+      { url: /hacsfiles/LG-WebOS-Remote-Control/lg-remote-control.js,               type: module },
+      { url: /hacsfiles/lovelace-auto-entities/auto-entities.js,                    type: module },
+      { url: /hacsfiles/harmony-card/harmony-card.js,                               type: module },
+      { url: /hacsfiles/kiosk-mode/kiosk-mode.js,                                   type: module },
+      { url: /local/lovelace/resources/custom-icons/custom-icons.js,                type: module },
 
       { url: '/local/marked.min.js?v=4.2.1',                                        type: module },
       { url: '/local/vanilla-tilt.min.js?v=1.7.3',                                  type: module },
       { url: '/local/browser_mod_icon.js?v=0.5',                                    type: module },
       { url: '/local/fonts.css?v=2.1',                                              type: css }
     ]
-
-recorder:
-  db_url: !secret recorder_db_url
-  exclude:
-    entity_globs:
-      - sensor.browser_*
-
-logger:
-  default: warning
-  logs:
-    homeassistant.components.websocket_api: fatal
-    custom_components.monitor_docker.helpers: error
-    homeassistant.setup: error
-
-sensor:
-  - platform: time_date
-    display_options:
-      - time
-      - date
-
-calendar:
-  - platform: caldav
-    username: !secret caldav2_username
-    password: !secret caldav2_password
-    url: https://caldav.icloud.com
-    calendars:
-      - !secret caldav2_calendar

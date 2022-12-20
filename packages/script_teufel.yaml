@@ -1,0 +1,33 @@
+script:
+  teufel_power_on:
+    sequence:
+      - service: remote.send_command
+        data:
+          entity_id: remote.harmony_hub
+          device: 74701874
+          command: PowerToggle
+      - service: script.teufel_update_state
+        data:
+          delay: 5
+      
+  teufel_power_off:
+    sequence:
+      - service: remote.send_command
+        data:
+          entity_id: remote.harmony_hub
+          device: 74701874
+          command: InputCd
+      - service: script.teufel_update_state
+        data:
+          delay: 7
+          
+  teufel_update_state:
+    fields:
+      delay:
+        description: "Delay"
+        example: 0
+    sequence:
+      - delay: "{{ delay }}"
+      - service: device_tracker.see
+        data:
+            dev_id: teufel_concept_e

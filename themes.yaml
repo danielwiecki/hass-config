@@ -9,7 +9,6 @@ themes:
     #edited default dark mode
     ha-card-box-shadow: none
     ha-card-background: none
-
     grid-card-gap: 5%
     masonry-view-card-margin: 0px
     state-icon-color: '#9da0a2'
@@ -25,52 +24,6 @@ themes:
     paper-toast-color: var(--primary-text-color)
     paper-toast-background-color: '#1b1b1bf2'
     vertical-stack-card-margin: 0
-
-    #temporarily revert 2022.12 icon colors
-    rgb-state-default-color: 49, 130, 183
-    rgb-state-alarm-armed-color: var(--rgb-state-default-color)
-    rgb-state-alarm-arming-color: var(--rgb-state-default-color)
-    rgb-state-alarm-pending-color: var(--rgb-state-default-color)
-    rgb-state-alarm-triggered-color: var(--rgb-state-default-color)
-    rgb-state-alert-color: var(--rgb-state-default-color)
-    rgb-state-automation-color: var(--rgb-state-default-color)
-    rgb-state-binary-sensor-alerting-color: var(--rgb-state-default-color)
-    rgb-state-binary-sensor-color: var(--rgb-state-default-color)
-    rgb-state-calendar-color: var(--rgb-state-default-color)
-    rgb-state-camera-color: var(--rgb-state-default-color)
-    rgb-state-climate-auto-color: var(--rgb-state-default-color)
-    rgb-state-climate-cool-color: var(--rgb-state-default-color)
-    rgb-state-climate-dry-color: var(--rgb-state-default-color)
-    rgb-state-climate-fan-only-color: var(--rgb-state-default-color)
-    rgb-state-climate-heat-color: var(--rgb-state-default-color)
-    rgb-state-climate-heat-cool-color: var(--rgb-state-default-color)
-    rgb-state-climate-idle-color: var(--rgb-state-default-color)
-    rgb-state-cover-color: var(--rgb-state-default-color)
-    rgb-state-fan-color: var(--rgb-state-default-color)
-    rgb-state-group-color: var(--rgb-state-default-color)
-    rgb-state-humidifier-color: var(--rgb-state-default-color)
-    rgb-state-input-boolean-color: var(--rgb-state-default-color)
-    rgb-state-light-color: var(--rgb-state-default-color)
-    rgb-state-lock-jammed-color: var(--rgb-state-default-color)
-    rgb-state-lock-locked-color: var(--rgb-state-default-color)
-    rgb-state-lock-pending-color: var(--rgb-state-default-color)
-    rgb-state-media-player-color: var(--rgb-state-default-color)
-    rgb-state-person-home-color: var(--rgb-state-default-color)
-    rgb-state-person-zone-color: var(--rgb-state-default-color)
-    rgb-state-remote-color: var(--rgb-state-default-color)
-    rgb-state-script-color: var(--rgb-state-default-color)
-    rgb-state-sensor-battery-high-color: var(--rgb-state-default-color)
-    rgb-state-sensor-battery-low-color: var(--rgb-state-default-color)
-    rgb-state-sensor-battery-medium-color: var(--rgb-state-default-color)
-    rgb-state-sensor-battery-unknown-color: var(--rgb-state-default-color)
-    rgb-state-siren-color: var(--rgb-state-default-color)
-    rgb-state-sun-day-color: var(--rgb-state-default-color)
-    rgb-state-sun-night-color: var(--rgb-state-default-color)
-    rgb-state-switch-color: var(--rgb-state-default-color)
-    rgb-state-timer-color: var(--rgb-state-default-color)
-    rgb-state-update-color: var(--rgb-state-default-color)
-    rgb-state-update-installing-color: var(--rgb-state-default-color)
-    rgb-state-vacuum-color: var(--rgb-state-default-color)
 
     #font
     primary-font-family: SF Pro Text, Roboto, system-ui
@@ -97,10 +50,10 @@ themes:
     bar-card-color: '#303435'
 
     #button_card_templates
-    button-card-font-size: 1.35vw
+    button-card-font-size: 1.1vw
     z-axis-adjustment: 0.05vw #tilt compensation
     button-card-font-weight: 500
-    button-card-letter-spacing: -0.02vw
+    button-card-letter-spacing: normal
     button-card-border-radius: 10%
 
     footer-card-font-size: 1.22vw
@@ -120,11 +73,9 @@ themes:
     dialog-backdrop-filter: blur(2em) brightness(0.75)
     popup-background-color: rgba(34,38,39,0.9)
     popup-border-width: 1px
-    popup-border-radius: 1em
-    tablet-popup-header-color: rgba(200, 218, 222, 0.05)
-    tablet-popup-content-padding: 1.4em 2.2em 1.6em 1.5em
+    ha-dialog-border-radius: 1em
+    tablet-card-content-padding: 1.4em 2.2em 1.6em 1.5em
     tablet-popup-button-padding: 0.1em 2em 1.8em 2em
-    tablet-popup-border-style: 1.5px solid rgba(0,0,0,0.2)
 
   ####################################################
   #                                                  #
@@ -167,8 +118,7 @@ themes:
               font-weight: 600 !important;
               color: rgba(255, 255, 255, 0.8) !important;
               padding: 0.2vw 0 2vw 0 !important;
-              letter-spacing: normal !important;
-              width: 100%;
+              letter-spacing: 0.07vw !important;
             }
             /* portrait */
             @media screen and (max-width: 1200px) {
@@ -206,51 +156,6 @@ themes:
                 hui-conditional-card {
                   margin: 0 0.15vh 0 0 !important;
                 }
-
-      #################################################
-      #                                               #
-      #            SIDEBAR VERTICAL-STACK             #
-      #                                               #
-      #################################################
-
-      grid-layout$hui-vertical-stack-card$: |
-        #root {
-          background-color: rgba(0, 0, 0, 0.06);
-          border-radius: 0;
-          border-right: 0.1vw solid rgba(58, 69, 73, 0.2);
-          min-height: 100vh;
-        }
-        /* phone */
-        @media screen and (max-width: 800px) {
-          #root {
-            background-color: rgba(0,0,0,0);
-            border-right: none;
-            min-height: 100%;
-            margin-left: -0.8%;
-            margin-bottom: -6%;
-          }
-        }
-
-      #################################################
-      #                                               #
-      #             SIDEBAR LAUNDRY TIMER             #
-      #                                               #
-      #################################################
-
-      grid-layout$hui-vertical-stack-card$hui-conditional-card:
-        .: |
-          hui-conditional-card {
-            display: flex;
-            justify-content: center;
-          }
-          /* phone */
-          @media screen and (max-width: 800px) {
-            hui-conditional-card > button-card {
-              zoom: 250%;
-              width: 100%;
-              filter: contrast(85%);
-            }
-          }
 
       #################################################
       #                                               #
@@ -293,7 +198,31 @@ themes:
       }
 
       .content .card-content {
-        padding: var(--tablet-popup-content-padding);
+        padding: var(--tablet-card-content-padding);
+      }
+
+      /* * * * * * * * * * * * * * * * * *
+        *                                 *
+        *           BUTTON CARD           *
+        *                                 *
+        * * * * * * * * * * * * * * * * * */
+
+      .type-button {
+        display: block;
+        --paper-item-icon-color: var(--state-icon-color);
+        opacity: 0.2;
+        transition: 0.4s;
+        height: initial;
+      }
+
+      .type-button:hover {
+        opacity: 0.5;
+        transition: none;
+      }
+
+      .type-button:active {
+        opacity: 0.7;
+        transition: none;
       }
 
       /* * * * * * * * * * * * * * * * * *
@@ -330,14 +259,60 @@ themes:
         border-radius: 0.3em;
         overflow: hidden;
       }
+      
+      /* * * * * * * * * * * * * * * * * *
+        *                                 *
+        *         MINI GRAPH CARD         *
+        *                                 *
+        * * * * * * * * * * * * * * * * * */
 
-    card-mod-more-info-yaml: |
-      .: |
-        :host {
-          --ha-card-border-width: 0;
+      .type-custom-mini-graph-card {
+        border: none;
+        border-radius: calc(var(--button-card-border-radius) * 1.15) !important;
+        color: white;
+      }
+      
+      .type-custom-mini-graph-card .header {
+        font-size: calc(var(--button-card-font-size) * 0.6) !important;
+        font-weight: var(--button-card-font-weight) !important;
+        letter-spacing: var(--button-card-letter-spacing) !important;
+        padding-bottom: 10% !important;
+        padding-top: 5% !important;
+      }
+      
+      .type-custom-mini-graph-card .states {
+        font-size: calc(var(--button-card-font-size) * 0.4) !important;
+        font-weight: var(--button-card-font-weight) !important;
+        letter-spacing: var(--button-card-letter-spacing) !important;
+        padding-bottom: 1% !important;
+      }
+      
+      /* portrait */
+      @media screen and (max-width: 1600px) {
+        .type-custom-mini-graph-card .header {
+          font-size: calc(var(--button-card-font-size) * 0.8) !important;
         }
-      ha-header-bar$: |
-        header {
-          background: var(--tablet-popup-header-color) !important;
-          border-bottom: var(--tablet-popup-border-style);
+        .type-custom-mini-graph-card .states {
+          font-size: calc(var(--button-card-font-size) * 0.6) !important;
         }
+      }
+      
+      /* portrait */
+      @media screen and (max-width: 1200px) {
+        .type-custom-mini-graph-card .header {
+          font-size: calc(var(--button-card-font-size) * var(--card-portrait)) !important;
+        }
+        .type-custom-mini-graph-card .states {
+          font-size: calc(var(--button-card-font-size) * var(--card-portrait) * 0.8) !important;
+        }
+      }
+      
+      /* phone */
+      @media screen and (max-width: 800px) {
+        .type-custom-mini-graph-card .header {
+          font-size: calc(var(--button-card-font-size) * var(--card-phone)) !important;
+        }
+        .type-custom-mini-graph-card .states {
+          font-size: calc(var(--button-card-font-size) * var(--card-phone) * 0.8) !important;
+        }
+      }

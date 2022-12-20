@@ -1,0 +1,35 @@
+automation:
+  - id: wallpanel_battery_management
+    alias: Wallpanel Battery Management
+    description: Schaltet das Wallpanel Ladegerät je nach Akkustand an oder aus
+    trigger:
+    - platform: time_pattern
+      minutes: '30'
+    condition: []
+    action:
+    - choose:
+      - conditions:
+        - type: is_battery_level
+          condition: device
+          device_id: 9edf5ca2e3613db5c8393a386d69191f
+          entity_id: sensor.nexus_9_battery_level
+          domain: sensor
+          above: 80
+        sequence:
+        - type: turn_off
+          device_id: 097b1c9bece695bc1a6917880f747d44
+          entity_id: switch.wallpanel_battery
+          domain: switch
+      - conditions:
+        - type: is_battery_level
+          condition: device
+          device_id: 9edf5ca2e3613db5c8393a386d69191f
+          entity_id: sensor.nexus_9_battery_level
+          domain: sensor
+          below: 30
+        sequence:
+        - type: turn_on
+          device_id: 097b1c9bece695bc1a6917880f747d44
+          entity_id: switch.wallpanel_battery
+          domain: switch
+    mode: single

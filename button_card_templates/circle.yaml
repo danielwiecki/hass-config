@@ -28,7 +28,9 @@ circle:
                 tspan = '<tspan dx=".2" dy="-.4">',
                 domain = entity.entity_id.split('.')[0],
                 state = variables.state_on,
+                max = variables.circle_max || 100,
                 input = variables.circle_input || ' ',
+                current = variables.circle_current || input,
                 unit = variables.circle_input_unit || ' ';
 
            /* * * * * * * * * * * * * * * * * *
@@ -45,7 +47,7 @@ circle:
                         transform: rotate(-90deg);
                         transform-origin: 50% 50%;
                         stroke-dasharray: ${c};
-                        stroke-dashoffset: ${typeof input === 'number' && c - input / 100 * c};
+                        stroke-dashoffset: ${typeof current === 'number' && c - current / max * c};
                         stroke-width: var(--c-stroke-width);
                         stroke: ${state ? 'var(--c-stroke-color-on)' : 'var(--c-stroke-color-off)'};
                         fill: ${state ? 'var(--c-fill-color-on)' : 'var(--c-fill-color-off)'};

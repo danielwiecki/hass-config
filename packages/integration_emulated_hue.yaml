@@ -1,0 +1,37 @@
+emulated_hue:
+  listen_port: 80
+  expose_by_default: false
+  entities:
+    light.schreibtisch:
+      name: "Schreibtisch"
+      hidden: false
+    light.essbereich:
+      name: "Essbereich"
+      hidden: false
+    light.flur:
+      name: "Flur"
+      hidden: false
+    light.schlafzimmer:
+      name: "Schlafzimmer"
+      hidden: false
+    light.wohnzimmer:
+      name: "Wohnzimmer"
+      hidden: false
+    light.kitchen:
+      name: "Küche"
+      hidden: false
+    light.ecke:
+      name: "Ecke"
+      hidden: false
+    light.stehlampe:
+      name: "Stehlampe"
+      hidden: false
+    light.couch:
+      name: "Couch"
+      hidden: false
+    light.lowboard:
+      name: "Lowboard"
+      hidden: false
+    switch.insektenvernichter:
+      name: "Insektenvernichter"
+      hidden: false

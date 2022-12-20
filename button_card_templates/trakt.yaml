@@ -1,0 +1,6 @@
+trakt:
+  template:
+    - settings
+    - tilt
+    - extra_styles
+    - base

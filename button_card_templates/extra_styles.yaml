@@ -150,7 +150,7 @@ extra_styles:
         }
 
         #name, #state {
-          font-size: var(--button-card-font-size);
+          font-size: calc(var(--button-card-font-size) * 0.8);
           font-weight: var(--button-card-font-weight);
           letter-spacing: var(--button-card-letter-spacing);
         }

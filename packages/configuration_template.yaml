@@ -1,0 +1,7 @@
+template:
+  - sensor:
+    - name: "Power Consumption Total"
+      unit_of_measurement: "kWh"
+      state: "{{ (states('sensor.power_consumption_total_aircooler')|float + states('sensor.power_consumption_total_desk_left')|float + states('sensor.power_consumption_total_desk_right')|float + states('sensor.power_consumption_total_kaffeeautomat')|float + states('sensor.power_consumption_total_lowboard_left')|float + states('sensor.power_consumption_total_lowboard_right')|float)}}"
+      device_class: energy
+      state_class: total

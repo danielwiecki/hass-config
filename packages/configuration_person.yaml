@@ -1,0 +1,6 @@
+person:
+  - name: Daniel
+    id: daniel
+    device_trackers:
+      - device_tracker.galaxy_s8
+      - device_tracker.sm_g950f

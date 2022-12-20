@@ -1,0 +1,91 @@
+graph:
+  template:
+    - base
+    - styles_graph
+  show_name: false
+  show_state: false
+  show_icon: false
+  state_display: >
+    [[[ return '&nbsp;'; ]]]
+  tap_action: more-info
+  hold_action: 
+    action: none
+  custom_fields:
+    graph:
+      card:
+        type: "custom:mini-graph-card"
+        entities:
+          - '[[[ return entity.entity_id ]]]'
+        height: 140
+        hours_to_show: 24
+        points_per_hour: 1
+        animate: true
+        line_width: 8
+        font_size: 75
+        decimals: 0
+        hour24: true
+        show:
+          name: true
+          icon: true
+          state: true
+  variables:
+    state_on: >
+      [[[
+        if (entity) {
+            return entity.state
+        }
+      ]]]
+  card_mod:
+    style: |
+      ha-card #graph, ha-card mini-graph-card {
+        height: 100%;
+      }
+          
+graph_humidity:
+  template:
+    - graph
+  custom_fields:
+    graph:
+      card:
+        name: Luftfeuchte
+        color_thresholds:
+          - value: 0
+            color: "#FF581E"
+          - value: 40
+            color: "#d35400"
+          - value: 50
+            color: "#228C22"
+          - value: 60
+            color: "#276696"
+            
+graph_temperature:
+  template:
+    - graph
+  custom_fields:
+    graph:
+      card:
+        name: Temperatur
+        color_thresholds:
+          - value: 0
+            color: "#FFFFFF"
+          - value: 10
+            color: "#8FEEFB"
+          - value: 15
+            color: "#F2F956"
+          - value: 20
+            color: "#F9B725"
+          - value: 25
+            color: "#FF581E"
+        
+graph_illuminance:
+  template:
+    - graph
+  custom_fields:
+    graph:
+      card:
+        name: Helligkeit
+        color_thresholds:
+          - value: 0
+            color: "#00000"
+          - value: 30
+            color: "#FFFFF"

@@ -1,0 +1,34 @@
+climate:
+  template:
+    - base
+    - circle
+    - loader
+  double_tap_action:
+    action: more-info
+  state_display: >
+    [[[ 
+        if (variables.state_on) {
+            return variables.translate_heating; 
+        }
+    ]]]
+  variables:
+    circle_max: >
+      [[[
+        if (entity) {
+            return entity.attributes.temperature
+        }
+      ]]]
+    circle_input: >
+      [[[
+        if (entity) {
+            return entity.attributes.temperature
+        }
+      ]]]
+    circle_input_unit: '°C'
+
+climate_bathroom:
+  variables:
+    circle_current: >
+      [[[
+        return parseFloat(states['sensor.multisensor_bad_temperature'].state)
+      ]]]

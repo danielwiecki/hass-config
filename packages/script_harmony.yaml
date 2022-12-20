@@ -1,0 +1,8 @@
+script:
+  harmony_tv_toggle:
+    sequence:
+      - service: remote.send_command
+        data:
+          entity_id: remote.harmony_hub
+          device: 78673930
+          command: PowerToggle

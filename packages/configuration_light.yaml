@@ -1,0 +1,25 @@
+light:
+  - platform: group
+    name: Schreibtisch
+    entities:
+      - light.schreibtisch_links
+      - light.schreibtisch_rechts
+  - platform: group
+    name: Essbereich
+    entities:
+      - light.essbereich_links
+      - light.essbereich_rechts
+  - platform: group
+    name: Flur
+    entities:
+      - light.flur_1
+      - light.flur_2
+  - platform: group
+    name: Wohnzimmer
+    entities:
+      - light.decke_1
+      - light.decke_2
+      - light.decke_3
+      - light.decke_4
+      - light.decke_5
+      - light.decke_6
