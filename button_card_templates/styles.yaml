@@ -133,7 +133,7 @@ styles_loader:
         - right: >
             [[[
               return variables.tilt_enable
-                  ? '-3.5%'
+                  ? '-0.5%'
                   : '6.5%';
             ]]]
         - width: >
