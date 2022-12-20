@@ -10,11 +10,11 @@ browser_mod:
       cards:
         - type: entities
           card_mod:
-            class: content
           entities:
             - entity: person.daniel
               secondary_info: last-changed
           card_mod:
+            class: content
             style: |
               ha-card {
                 border: none;
