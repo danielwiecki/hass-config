@@ -273,11 +273,16 @@ themes:
       }
       
       .type-custom-mini-graph-card .header {
-        font-size: calc(var(--button-card-font-size) * 0.6) !important;
-        font-weight: var(--button-card-font-weight) !important;
-        letter-spacing: var(--button-card-letter-spacing) !important;
         padding-bottom: 10% !important;
         padding-top: 5% !important;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .type-custom-mini-graph-card .header .name {
+        font-size: calc(var(--button-card-font-size) * 0.7) !important;
+        font-weight: var(--button-card-font-weight) !important;
+        letter-spacing: var(--button-card-letter-spacing) !important;
       }
       
       .type-custom-mini-graph-card .states {
@@ -289,7 +294,7 @@ themes:
       
       /* portrait */
       @media screen and (max-width: 1600px) {
-        .type-custom-mini-graph-card .header {
+        .type-custom-mini-graph-card .header .name {
           font-size: calc(var(--button-card-font-size) * 0.8) !important;
         }
         .type-custom-mini-graph-card .states {
@@ -299,7 +304,7 @@ themes:
       
       /* portrait */
       @media screen and (max-width: 1200px) {
-        .type-custom-mini-graph-card .header {
+        .type-custom-mini-graph-card .header .name {
           font-size: calc(var(--button-card-font-size) * var(--card-portrait)) !important;
         }
         .type-custom-mini-graph-card .states {
@@ -309,7 +314,7 @@ themes:
       
       /* phone */
       @media screen and (max-width: 800px) {
-        .type-custom-mini-graph-card .header {
+        .type-custom-mini-graph-card .header .name {
           font-size: calc(var(--button-card-font-size) * var(--card-phone)) !important;
         }
         .type-custom-mini-graph-card .states {
