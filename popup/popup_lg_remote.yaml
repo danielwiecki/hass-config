@@ -2,20 +2,11 @@ action: fire-dom-event
 browser_mod:
   service: browser_mod.popup
   data:
-    title: Wetter
+    title: LG TV Remote
     content:
       type: vertical-stack
       cards:
-        - type: entities
-          state_color: true
-          card_mod:
-            class: content
-            style: |
-              ha-card {
-                border: none;
-              }
-          entities:
 
-            - type: 'custom:lg-remote-control'
-              entity: media_player.lg_webos_smart_tv
-              mac: 74:E6:B8:B2:6E:99
+        - type: 'custom:lg-remote-control'
+          entity: media_player.lg_webos_smart_tv
+          mac: 74:E6:B8:B2:6E:99

@@ -6,39 +6,30 @@ browser_mod:
     content:
       type: vertical-stack
       cards:
-        - type: entities
-          state_color: true
-          card_mod:
-            class: content
-            style: |
-              ha-card {
-                border: none;
-              }
-          entities:
                   
-            - type: custom:auto-entities
-              card:
-                type: custom:bar-card
-                decimal: 0
-                unit_of_measurement: '%'
-                icon: mdi:battery
-                animation:
-                  state: on
-                severity:
-                  - color: '#EA2C02'
-                    from: 0
-                    to: 29
-                  - color: '#FF9E00'
-                    from: 30
-                    to: 69
-                  - color: '#00AB07'
-                    from: 70
-                    to: 999
-                card_mod:
-                  style: |
-                    ha-card {
-                      border: none;
-                    }
-              filter:
-                include:
-                  - entity_id: "sensor.*_battery_level"
+        - type: custom:auto-entities
+          card:
+            type: custom:bar-card
+            decimal: 0
+            unit_of_measurement: '%'
+            icon: mdi:battery
+            animation:
+              state: on
+            severity:
+              - color: '#EA2C02'
+                from: 0
+                to: 29
+              - color: '#FF9E00'
+                from: 30
+                to: 69
+              - color: '#00AB07'
+                from: 70
+                to: 999
+            card_mod:
+              style: |
+                ha-card {
+                  border: none;
+                }
+          filter:
+            include:
+              - entity_id: "sensor.*_battery_level"
