@@ -69,8 +69,8 @@ harmony:
             tap_action: 
               action: call-service
               service: script.harmony_tv_toggle
-    #        double_tap_action:
-     #         !include ../popup/popup_lg_remote.yaml
+            double_tap_action:
+              !include ../popup/popup_lg_remote.yaml
             template:
               - icon_tv
               - base_medium
