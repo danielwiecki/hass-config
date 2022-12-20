@@ -2,7 +2,7 @@ switch:
   - platform: template
     switches:
       teufel:
-        name: "Teufel"
+        friendly_name: "Teufel"
         value_template: "{{ (states['device_tracker.teufel_concept_e'].state == 'home' and states['device_tracker.teufel_concept_e'].attributes.source_type == 'bluetooth') }}"
         turn_on:
           service: script.teufel_power_on

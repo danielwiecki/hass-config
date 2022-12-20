@@ -430,6 +430,7 @@ views:
             name: Flur
             template:
               - light
+              - nested_presence_sensor_flur
               - icon_spot
               
       #################################################

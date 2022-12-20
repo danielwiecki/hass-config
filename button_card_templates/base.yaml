@@ -96,4 +96,3 @@ base_medium:
   template:
     - base_small
     - styles_base_medium
-  show_state: false

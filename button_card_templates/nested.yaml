@@ -1,0 +1,28 @@
+nested_presence_sensor_flur:
+  styles:
+    grid:
+      - grid-template-areas: |
+          "icon circle circle"
+          "n presence presence"
+          "s presence presence"
+  custom_fields:
+    presence:
+      card:
+        type: 'custom:button-card'
+        template:
+          - base_small
+          - icon_away
+        tap_action: none
+        double_tap_action: none
+        show_name: false
+        entity: binary_sensor.bewegungsmelder_flur
+        styles:
+          grid:
+            - grid-template-areas: |
+                "icon"
+        card_mod:
+          style: |
+            ha-card {
+              padding-top: 15% !important;
+            }
+            

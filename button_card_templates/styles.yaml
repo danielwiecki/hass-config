@@ -47,7 +47,6 @@ styles_base_small:
           "n"
       - grid-template-columns: 1
       - grid-template-rows: 1
-      - gap: 1.3%
       - align-items: center
     name:
       - justify-self: center
