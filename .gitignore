@@ -1,18 +1,20 @@
 .*
-!/.github
 !.HA_VERSION
 backups
 blueprints
 deps
-@eaDir
 
-secrets_template.yaml
 secrets.yaml
+
+automations.yaml
+groups.yaml
+scenes.yaml
+scripts.yaml
+
+harmony*.conf
+known_devices.yaml
 
 custom_components/
 www/community/
-www/fonts/
-www/Plex_Recently_Added/
 
-*.code-workspace
-home-assistant.log*
+home-assistant*
