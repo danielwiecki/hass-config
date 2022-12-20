@@ -47,6 +47,7 @@ harmony:
             }
             ha-card .activities {
               justify-content: space-between;
+              flex-wrap: no-wrap;
             }
             ha-card .volume-controls {
               justify-content: space-around;
