@@ -33,13 +33,13 @@ browser_mod:
           show_state: false
           entities:
 
-            - entity: sensor.sm_g950f_wifi_connection
+            - entity: binary_sensor.device_tracker_galaxy_s8_wifi
               name: Wifi
               icon: mdi:wifi
               card_mod:
                 style: &state |
                   state-badge {
-                    color: {{ is_state(config.entity, 'Obi Lan Kenobi') | iif('#3182b7', '#3c3f3f') }};
+                    color: {{ is_state(config.entity, 'on') | iif('#3182b7', '#3c3f3f') }};
                   }
 
             - entity: device_tracker.galaxy_s8

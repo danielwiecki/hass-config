@@ -5,3 +5,6 @@ template:
       state: "{{ (states('sensor.power_consumption_total_aircooler')|float + states('sensor.power_consumption_total_desk_left')|float + states('sensor.power_consumption_total_desk_right')|float + states('sensor.power_consumption_total_kaffeeautomat')|float + states('sensor.power_consumption_total_lowboard_left')|float + states('sensor.power_consumption_total_lowboard_right')|float)}}"
       device_class: energy
       state_class: total
+  - binary_sensor:
+    - name: "Device Tracker Galaxy S8 Wifi"
+      state: "{{ states('sensor.sm_g950f_wifi_connection') == 'Obi Lan Kenobi' }}"
