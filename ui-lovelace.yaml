@@ -123,6 +123,11 @@ views:
                 entity: sensor.multisensor_wohnzimmer_humidity
                 template:
                   - graph_humidity
+                  
+              - type: custom:button-card
+                entity: sensor.multisensor_wohnzimmer_pressure
+                template:
+                  - graph_pressure
 
           - type: custom:button-card
             entity: light.schreibtisch
@@ -247,6 +252,11 @@ views:
                 entity: sensor.multisensor_bad_humidity
                 template:
                   - graph_humidity
+                  
+              - type: custom:button-card
+                entity: sensor.multisensor_bad_pressure
+                template:
+                  - graph_pressure
 
           - type: custom:button-card
             entity: climate.thermostat_bad
@@ -369,6 +379,11 @@ views:
                 entity: sensor.multisensor_schlafzimmer_humidity
                 template:
                   - graph_humidity
+                  
+              - type: custom:button-card
+                entity: sensor.multisensor_schlafzimmer_pressure
+                template:
+                  - graph_pressure
 
           - type: custom:button-card
             entity: light.schlafzimmer
@@ -477,6 +492,18 @@ views:
         view_layout:
           grid-area: footer
         cards:
+        
+          - type: custom:button-card
+            name: >
+              <ha-icon icon="mdi:weather-sunny"></ha-icon> Scheduler
+            tap_action:
+              !include popup/footer_scheduler.yaml
+            variables:
+              notify: >
+                [[[
+                  return false;
+                ]]]
+            template: footer
             
           - type: custom:button-card
             name: >

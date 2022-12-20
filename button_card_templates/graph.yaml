@@ -89,3 +89,12 @@ graph_illuminance:
             color: "#00000"
           - value: 30
             color: "#FFFFF"
+            
+graph_pressure:
+  template:
+    - graph
+  custom_fields:
+    graph:
+      card:
+        name: Luftdruck
+        line_color: "#3541FF"
