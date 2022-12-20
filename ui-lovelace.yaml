@@ -495,7 +495,7 @@ views:
         
           - type: custom:button-card
             name: >
-              <ha-icon icon="mdi:weather-sunny"></ha-icon> Scheduler
+              <ha-icon icon="mdi:clock-outline"></ha-icon> Scheduler
             tap_action:
               !include popup/footer_scheduler.yaml
             variables:
