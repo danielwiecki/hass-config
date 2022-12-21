@@ -9,7 +9,7 @@ input_datetime:
     has_date: false
     has_time: true
     initial: "17:00:00"
-  
+
 input_number:
   heating_trigger_temp:
     name: Heating Automation Trigger Temperature
@@ -23,5 +23,5 @@ input_number:
     min: 22.0
     max: 24.0
     step: 1
-    
+
 input_boolean:

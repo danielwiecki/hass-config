@@ -9,7 +9,7 @@ script:
       - service: script.teufel_update_state
         data:
           delay: 5
-      
+
   teufel_power_off:
     sequence:
       - service: remote.send_command
@@ -20,7 +20,7 @@ script:
       - service: script.teufel_update_state
         data:
           delay: 7
-          
+
   teufel_update_state:
     fields:
       delay:
@@ -30,4 +30,4 @@ script:
       - delay: "{{ delay }}"
       - service: device_tracker.see
         data:
-            dev_id: teufel_concept_e
+          dev_id: teufel_concept_e

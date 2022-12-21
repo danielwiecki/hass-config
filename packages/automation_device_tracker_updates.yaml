@@ -1,19 +1,19 @@
 automation:
   - id: device_tracker_update_galaxy
     alias: Device Tracker Update Galaxy
-    description: ''
+    description: ""
     trigger:
-    - platform: time_pattern
-      minutes: '/15'
+      - platform: time_pattern
+        minutes: "/15"
     condition: []
     action:
-    - service: device_tracker.see
-      data:
-        dev_id: galaxy_s8
+      - service: device_tracker.see
+        data:
+          dev_id: galaxy_s8
     mode: single
   - id: device_tracker_update_teufel
     alias: Device Tracker Update Teufel
-    description: ''
+    description: ""
     trigger:
       - platform: time_pattern
         seconds: /30

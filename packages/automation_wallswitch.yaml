@@ -5,50 +5,50 @@ automation:
     mode: restart
     max_exceeded: silent
     trigger:
-    - platform: event
-      event_type: deconz_event
-      event_data:
-        device_id: 0fe32ddcf5cc493c0dcf2ab5e9a76828
+      - platform: event
+        event_type: deconz_event
+        event_data:
+          device_id: 0fe32ddcf5cc493c0dcf2ab5e9a76828
     action:
-    - variables:
-        event: '{{ trigger.event.data.event }}'
-    - choose:
-      - conditions:
-        - '{{ event == 1002 }}'
-        sequence:
-        - type: toggle
-          device_id: 0c120f8b85f2964f05e73644383ff1bd
-          entity_id: light.stehlampe
-          domain: light
-      - conditions:
-        - '{{ event == 1004 }}'
-        sequence: []
-      - conditions:
-        - '{{ event == 1001 }}'
-        sequence: []
-      - conditions:
-        - '{{ event == 2002 }}'
-        sequence:
-        - type: toggle
-          device_id: f56ad10fa8b0d79bdcc1bbbbab7a50c7
-          entity_id: light.schreibtisch_links
-          domain: light
-        - type: toggle
-          device_id: 031a41c3807f7b4ce4f7ef1453283184
-          entity_id: light.schreibtisch_rechts
-          domain: light
-      - conditions:
-        - '{{ event == 2004 }}'
-        sequence: []
-      - conditions:
-        - '{{ event == 2001 }}'
-        sequence: []
-      - conditions:
-        - '{{ event == 3002 }}'
-        sequence: []
-      - conditions:
-        - '{{ event == 3004 }}'
-        sequence: []
-      - conditions:
-        - '{{ event == 3001 }}'
-        sequence: []
+      - variables:
+          event: "{{ trigger.event.data.event }}"
+      - choose:
+          - conditions:
+              - "{{ event == 1002 }}"
+            sequence:
+              - type: toggle
+                device_id: 0c120f8b85f2964f05e73644383ff1bd
+                entity_id: light.stehlampe
+                domain: light
+          - conditions:
+              - "{{ event == 1004 }}"
+            sequence: []
+          - conditions:
+              - "{{ event == 1001 }}"
+            sequence: []
+          - conditions:
+              - "{{ event == 2002 }}"
+            sequence:
+              - type: toggle
+                device_id: f56ad10fa8b0d79bdcc1bbbbab7a50c7
+                entity_id: light.schreibtisch_links
+                domain: light
+              - type: toggle
+                device_id: 031a41c3807f7b4ce4f7ef1453283184
+                entity_id: light.schreibtisch_rechts
+                domain: light
+          - conditions:
+              - "{{ event == 2004 }}"
+            sequence: []
+          - conditions:
+              - "{{ event == 2001 }}"
+            sequence: []
+          - conditions:
+              - "{{ event == 3002 }}"
+            sequence: []
+          - conditions:
+              - "{{ event == 3004 }}"
+            sequence: []
+          - conditions:
+              - "{{ event == 3001 }}"
+            sequence: []
