@@ -23,7 +23,7 @@ footer:
       ]]]
   size: 2vw
   show_icon: false
-  color: '#9da0a2'
+  color: "#9da0a2"
   custom_fields:
     notify: >
       [[[

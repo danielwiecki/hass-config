@@ -24,7 +24,7 @@ climate:
             return entity.attributes.temperature
         }
       ]]]
-    circle_input_unit: '°C'
+    circle_input_unit: "°C"
 
 climate_bathroom:
   variables:

@@ -9,12 +9,12 @@ harmony:
     [[[ return '&nbsp;'; ]]]
   tap_action:
     action: none
-  hold_action: 
+  hold_action:
     action: none
   custom_fields:
     harmony:
       card:
-        type: 'custom:harmony-card'
+        type: "custom:harmony-card"
         entity: remote.harmony_hub
         volume_device: 74701874
         show_activities_icons: true
@@ -63,21 +63,19 @@ harmony:
         type: grid
         columns: 2
         cards:
-        
           - type: custom:button-card
             entity: media_player.lg_webos_smart_tv
             name: TV
-            tap_action: 
+            tap_action:
               action: call-service
               service: script.harmony_tv_toggle
-            double_tap_action:
-              !include ../popup/popup_lg_remote.yaml
+            double_tap_action: !include ../popup/popup_lg_remote.yaml
             template:
               - icon_tv
               - base_medium
               - tilt_disabled
               - loader_centered
-          
+
           - type: custom:button-card
             entity: switch.teufel
             name: Teufel

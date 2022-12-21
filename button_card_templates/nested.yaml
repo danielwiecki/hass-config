@@ -8,13 +8,13 @@ nested_presence_sensor_flur:
   custom_fields:
     presence:
       card:
-        type: 'custom:button-card'
+        type: "custom:button-card"
         template:
           - base_small
           - tilt_disabled
           - icon_away
         tap_action: none
-        double_tap_action: 
+        double_tap_action:
           action: more-info
         show_name: false
         entity: binary_sensor.bewegungsmelder_flur
@@ -27,4 +27,3 @@ nested_presence_sensor_flur:
             ha-card {
               padding-top: 15% !important;
             }
-            

@@ -34,7 +34,7 @@ base_variables:
             return true;
         }
       ]]]
-    
+
 base_actions:
   tap_action:
     card_bounce: |
@@ -68,7 +68,7 @@ base_actions:
     haptic: success
   hold_action:
     action: block
-  
+
 base:
   template:
     - base_variables
@@ -91,7 +91,7 @@ base_small:
     - base
     - styles_base_small
   show_state: false
-  
+
 base_medium:
   template:
     - base_small

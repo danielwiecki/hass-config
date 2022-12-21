@@ -38,7 +38,7 @@ styles_base:
                 ? 'rgba(255, 255, 255, 0.85)'
                 : 'rgba(115, 115, 115, 0.25)';
           ]]]
-          
+
 styles_base_small:
   styles:
     grid:
@@ -61,17 +61,17 @@ styles_base_small:
         - margin-left: 0
         - justify-self: center
         - margin-left: 0 !important
-        
+
 styles_base_medium:
   styles:
     custom_fields:
       icon:
         - width: 70%
-          
+
 styles_footer:
   styles:
     card:
-      - color: '#97989c'
+      - color: "#97989c"
       - width: fit-content
       - border: 0.12vw solid rgba(115, 115, 115, 0.2)
       - transition: none
@@ -95,13 +95,13 @@ styles_footer:
             ]]]
         - position: absolute
         - font-weight: 700
-        - color: '#d6d6d6'
-        - background: '#8b3333'
+        - color: "#d6d6d6"
+        - background: "#8b3333"
         - border-radius: 50%
         - text-align: center
         - text-overflow: unset
         - z-index: 1
-        
+
 styles_graph:
   styles:
     grid:
@@ -118,7 +118,7 @@ styles_graph:
           [[[
             return 'rgba(115, 115, 115, 0.25)'
           ]]]
-          
+
 styles_loader:
   styles:
     custom_fields:
@@ -151,7 +151,7 @@ styles_loader:
                   ? 'none'
                   : 'invert(1)';
             ]]]
-            
+
 styles_loader_centered:
   styles:
     custom_fields:
@@ -159,7 +159,7 @@ styles_loader_centered:
         - top: inherit
         - right: inherit
         - justify-self: center
-            
+
 styles_media:
   styles:
     card:
@@ -185,7 +185,7 @@ styles_media:
                     : '1px 1px 5px rgba(18, 22, 23, 0.9)';
             }
           ]]]
-          
+
 styles_harmony:
   styles:
     card:

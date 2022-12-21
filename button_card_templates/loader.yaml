@@ -19,7 +19,7 @@ loader:
             loader('loader', 'initial', 'none');
         }
       ]]]
-      
+
 loader_centered:
   template:
     - loader
