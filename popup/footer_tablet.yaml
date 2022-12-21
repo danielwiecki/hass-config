@@ -6,7 +6,6 @@ browser_mod:
     content:
       type: vertical-stack
       cards:
-      
         - type: entities
           state_color: true
           card_mod:
@@ -16,28 +15,26 @@ browser_mod:
                 border: none;
               }
           entities:
-
             - entity: binary_sensor.nexus_9_is_charging
 
             - type: custom:bar-card
               width: 55%
               height: 2em
               decimal: 0
-              unit_of_measurement: '%'
+              unit_of_measurement: "%"
               positions: &bar_card_positions
                 icon: outside
-                indicator: 'off'
+                indicator: "off"
                 name: outside
               severity:
-                - color: '#6d2525'
+                - color: "#6d2525"
                   from: 0
                   to: 39
-                - color: '#303435'
+                - color: "#303435"
                   from: 40
                   to: 999
               entity_row: true
               entities:
-
                 - entity: sensor.nexus_9_battery_level
                   icon: mdi:battery
                   tap_action:
@@ -50,21 +47,20 @@ browser_mod:
                   ha-card {
                     border: none;
                   }
-                      
+
             - type: custom:bar-card
               width: 55%
               height: 2em
               decimal: 3
               max: 4
-              unit_of_measurement: 'GB'
+              unit_of_measurement: "GB"
               positions: *bar_card_positions
               severity:
-                - color: '#6d2525'
+                - color: "#6d2525"
                   from: 90
                   to: 999
               entity_row: true
               entities:
-
                 - entity: sensor.nexus_9_app_memory
                   icon: mdi:memory
                   tap_action:
@@ -82,15 +78,14 @@ browser_mod:
               width: 55%
               height: 2em
               decimal: 0
-              unit_of_measurement: '%'
+              unit_of_measurement: "%"
               positions: *bar_card_positions
               severity:
-                - color: '#6d2525'
+                - color: "#6d2525"
                   from: 90
                   to: 999
               entity_row: true
               entities:
-
                 - entity: sensor.nexus_9_internal_storage
                   icon: mdi:sd
                   tap_action:

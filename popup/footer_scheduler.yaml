@@ -6,8 +6,7 @@ browser_mod:
     content:
       type: vertical-stack
       cards:
-
-        - type: 'custom:scheduler-card'
+        - type: "custom:scheduler-card"
           include:
             - climate.thermostat_bad
             - light

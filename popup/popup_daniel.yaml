@@ -9,7 +9,6 @@ browser_mod:
       type: vertical-stack
       cards:
         - type: entities
-          card_mod:
           entities:
             - entity: person.daniel
               secondary_info: last-changed
@@ -32,7 +31,6 @@ browser_mod:
               }
           show_state: false
           entities:
-
             - entity: binary_sensor.device_tracker_galaxy_s8_wifi
               name: Wifi
               icon: mdi:wifi
