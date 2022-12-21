@@ -9,16 +9,9 @@ trakt_tv:
       new_show:
         days_to_fetch: 90
         max_medias: 3
-      premiere:
-        days_to_fetch: 90
-        max_medias: 3
-      movie:
-        days_to_fetch: 90
-        max_medias: 3
     next_to_watch:
       all:
-        max_medias: 40
-      only_aired:
-        max_medias: 40
-      only_upcoming:
-        max_medias: 40
+        max_medias: 3
+    recommendation:
+      show:
+        max_medias: 3

@@ -1,3 +1,8 @@
 trakt:
   template:
     - base
+  custom_fields:
+    upcoming:
+      card:
+        type: "custom:upcoming-media-card"
+        entity: "[[[ return entity.entity_id ]]]"
