@@ -77,8 +77,7 @@ base:
     - settings
     - tilt
     - extra_styles
-  show_state: true
-  show_icon: false
+    - no_icon
   state_display: >
     [[[ 
         if (variables.state === true) {
@@ -90,7 +89,7 @@ base_small:
   template:
     - base
     - styles_base_small
-  show_state: false
+    - no_state
 
 base_medium:
   template:

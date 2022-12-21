@@ -203,3 +203,12 @@ styles_harmony:
         - width: 100%
       devices:
         - width: 100%
+
+styles_person:
+  styles:
+    custom_fields:
+      icon:
+        - clip-path: circle()
+        - width: 82%
+        - pointer-events: none
+        - display: grid

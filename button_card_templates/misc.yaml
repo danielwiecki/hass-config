@@ -1,0 +1,14 @@
+no_name:
+  show_name: false
+
+no_state:
+  show_state: false
+
+no_icon:
+  show_icon: false
+
+no_labels:
+  template:
+    - no_name
+    - no_state
+    - no_icon

@@ -13,10 +13,10 @@ nested_presence_sensor_flur:
           - base_small
           - tilt_disabled
           - icon_away
+          - no_name
         tap_action: none
         double_tap_action:
           action: more-info
-        show_name: false
         entity: binary_sensor.bewegungsmelder_flur
         styles:
           grid:

@@ -4,6 +4,7 @@ footer:
     - tilt
     - extra_styles
     - styles_footer
+    - no_icon
   variables:
     notify: >
       [[[
@@ -22,7 +23,6 @@ footer:
         };
       ]]]
   size: 2vw
-  show_icon: false
   color: "#9da0a2"
   custom_fields:
     notify: >

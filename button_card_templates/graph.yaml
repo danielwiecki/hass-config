@@ -2,6 +2,7 @@ graph:
   template:
     - base
     - styles_graph
+    - no_labels
   variables:
     state_on: >
       [[[
@@ -9,9 +10,6 @@ graph:
             return entity.state
         }
       ]]]
-  show_name: false
-  show_state: false
-  show_icon: false
   state_display: >
     [[[ return '&nbsp;'; ]]]
   tap_action: more-info
