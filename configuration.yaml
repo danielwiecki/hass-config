@@ -31,10 +31,17 @@ lovelace:
       { url: /hacsfiles/lovelace-auto-entities/auto-entities.js,                    type: module },
       { url: /hacsfiles/harmony-card/harmony-card.js,                               type: module },
       { url: /hacsfiles/kiosk-mode/kiosk-mode.js,                                   type: module },
-      { url: /local/lovelace/resources/custom-icons/custom-icons.js,                type: module },
+      { url: /hacsfiles/custom-icons/custom-icons.js,                               type: module },
+      { url: /hacsfiles/power-usage-card-regex/power-usage-card-regex.js,           type: module },
+
 
       { url: '/local/marked.min.js?v=4.2.1',                                        type: module },
       { url: '/local/vanilla-tilt.min.js?v=1.7.3',                                  type: module },
       { url: '/local/browser_mod_icon.js?v=0.5',                                    type: module },
       { url: '/local/fonts.css?v=2.1',                                              type: css }
     ]
+
+logger:
+  default: info
+  logs:
+    custom_components.hacs: debug
