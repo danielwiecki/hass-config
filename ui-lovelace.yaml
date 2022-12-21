@@ -1,5 +1,4 @@
-button_card_templates:
-  !include_dir_merge_named button_card_templates
+button_card_templates: !include_dir_merge_named button_card_templates
 
 kiosk_mode:
   user_settings:
@@ -63,7 +62,6 @@ views:
             ". flur home . ."
             ". footer footer . ."
     cards:
-
       #extra_styles fix, do not remove
       #also warn if theme is not set
 
@@ -89,8 +87,7 @@ views:
             - font-weight: bolder
             - font-size: xxx-large
             - background: yellow
-            
-            
+
       #################################################
       #                                               #
       #                    WOHNZIMMER                 #
@@ -102,7 +99,6 @@ views:
           grid-area: wohnzimmer
         columns: 2
         cards:
-
           - type: custom:swipe-card
             parameters:
               autoplay:
@@ -113,17 +109,16 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-                
               - type: custom:button-card
                 entity: sensor.multisensor_wohnzimmer_temperature
                 template:
                   - graph_temperature
-                
+
               - type: custom:button-card
                 entity: sensor.multisensor_wohnzimmer_humidity
                 template:
                   - graph_humidity
-                  
+
               - type: custom:button-card
                 entity: sensor.multisensor_wohnzimmer_pressure
                 template:
@@ -142,14 +137,14 @@ views:
             template:
               - light
               - icon_shade
-              
+
           - type: custom:button-card
             entity: light.wohnzimmer
             name: Decke
             template:
               - light
               - icon_spot
-              
+
       #################################################
       #                                               #
       #                    MEDIA                      #
@@ -161,7 +156,6 @@ views:
           grid-area: media
         columns: 1
         cards:
-
           - type: custom:swipe-card
             parameters:
               autoplay:
@@ -171,7 +165,6 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-            
               - type: custom:button-card
                 entity: sensor.trakt_upcoming_calendar
                 name: TV
@@ -181,7 +174,6 @@ views:
               - type: grid
                 columns: 2
                 cards:
-
                   - type: custom:button-card
                     entity: media_player.desktop_s43pn6o
                     name: PC
@@ -213,25 +205,23 @@ views:
                       - media
                       - icon_nest_mini
                       - icon_play_pause
-                      
+
               - type: custom:button-card
                 entity: remote.harmony_hub
                 template:
                   - harmony
-                
-                        
+
       #################################################
       #                                               #
       #                    BAD                        #
       #                                               #
-      ################################################# 
+      #################################################
       - type: grid
         title: Bad
         view_layout:
           grid-area: bad
         columns: 2
         cards:
-                
           - type: custom:swipe-card
             parameters:
               autoplay:
@@ -242,17 +232,16 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-            
               - type: custom:button-card
                 entity: sensor.multisensor_bad_temperature
                 template:
                   - graph_temperature
-                
+
               - type: custom:button-card
                 entity: sensor.multisensor_bad_humidity
                 template:
                   - graph_humidity
-                  
+
               - type: custom:button-card
                 entity: sensor.multisensor_bad_pressure
                 template:
@@ -268,7 +257,7 @@ views:
               - climate
               - climate_bathroom
               - icon_bathroom
-              
+
           - type: custom:button-card
             entity: binary_sensor.kontaktsensor_bad
             name: Fenster
@@ -277,7 +266,7 @@ views:
             template:
               - base
               - icon_closet
-              
+
       #################################################
       #                                               #
       #                    Rest                       #
@@ -289,7 +278,6 @@ views:
           grid-area: rest
         columns: 2
         cards:
-
           - type: custom:button-card
             entity: light.essbereich
             name: Essbereich
@@ -303,18 +291,17 @@ views:
             template:
               - light
               - icon_ledstripe
-              
+
           - type: custom:button-card
             entity: light.couch
             name: Couch
             template:
               - light
               - icon_hue
-              
+
           - type: grid
             columns: 2
             cards:
-            
               - type: custom:button-card
                 entity: switch.lufterfrischer
                 name: Febreze 1
@@ -322,7 +309,7 @@ views:
                   - icon_fan2
                   - base_small
                   - loader
-                  
+
               - type: custom:button-card
                 entity: switch.lufterfrischer_2
                 name: Febreze 2
@@ -330,7 +317,7 @@ views:
                   - icon_fan2
                   - base_small
                   - loader
-                  
+
               - type: custom:button-card
                 entity: switch.insektenvernichter
                 name: Insektenvernichter
@@ -338,7 +325,7 @@ views:
                   - icon_fan2
                   - base_small
                   - loader
-                  
+
               - type: custom:button-card
                 entity: switch.wallpanel_battery
                 name: Wallpanel
@@ -346,7 +333,7 @@ views:
                   - icon_fan2
                   - base_small
                   - loader
-                  
+
       #################################################
       #                                               #
       #                     Schlafzimmer              #
@@ -358,7 +345,6 @@ views:
           grid-area: schlafzimmer
         columns: 2
         cards:
-        
           - type: custom:swipe-card
             parameters:
               autoplay:
@@ -369,17 +355,16 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-                
               - type: custom:button-card
                 entity: sensor.multisensor_schlafzimmer_temperature
                 template:
                   - graph_temperature
-                
+
               - type: custom:button-card
                 entity: sensor.multisensor_schlafzimmer_humidity
                 template:
                   - graph_humidity
-                  
+
               - type: custom:button-card
                 entity: sensor.multisensor_schlafzimmer_pressure
                 template:
@@ -391,7 +376,7 @@ views:
             template:
               - light
               - icon_spot
-              
+
       #################################################
       #                                               #
       #                     Flur                      #
@@ -403,7 +388,6 @@ views:
           grid-area: flur
         columns: 2
         cards:
-            
           - type: custom:swipe-card
             parameters:
               autoplay:
@@ -414,12 +398,11 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-                
               - type: custom:button-card
                 entity: sensor.bewegungsmelder_flur_temperature
                 template:
                   - graph_temperature
-                
+
               - type: custom:button-card
                 entity: sensor.bewegungsmelder_flur_illuminance
                 template:
@@ -432,7 +415,7 @@ views:
               - light
               - nested_presence_sensor_flur
               - icon_spot
-              
+
       #################################################
       #                                               #
       #                     Küche                     #
@@ -444,14 +427,13 @@ views:
           grid-area: kueche
         columns: 2
         cards:
-        
           - type: custom:button-card
             entity: light.kitchen
             name: Küche
             template:
               - light
               - icon_ledstripe
-              
+
           - type: custom:button-card
             entity: binary_sensor.kontaktsensor_kuche
             name: Fenster
@@ -460,7 +442,7 @@ views:
             template:
               - base
               - icon_closet
-              
+
       #################################################
       #                                               #
       #                     HOME                      #
@@ -473,16 +455,14 @@ views:
           grid-area: home
         columns: 2
         cards:
-
           - type: custom:button-card
             entity: person.daniel
             name: Daniel
-            double_tap_action:
-              !include popup/popup_daniel.yaml
+            double_tap_action: !include popup/popup_daniel.yaml
             template:
               - person
               - icon_home
-              
+
       #################################################
       #                                               #
       #                    FOOTER                     #
@@ -493,24 +473,21 @@ views:
         view_layout:
           grid-area: footer
         cards:
-        
           - type: custom:button-card
             name: >
               <ha-icon icon="mdi:clock-outline"></ha-icon> Scheduler
-            tap_action:
-              !include popup/footer_scheduler.yaml
+            tap_action: !include popup/footer_scheduler.yaml
             variables:
               notify: >
                 [[[
                   return false;
                 ]]]
             template: footer
-            
+
           - type: custom:button-card
             name: >
               <ha-icon icon="mdi:weather-sunny"></ha-icon> Wetter
-            tap_action:
-              !include popup/footer_weather.yaml
+            tap_action: !include popup/footer_weather.yaml
             variables:
               notify: >
                 [[[
@@ -521,8 +498,7 @@ views:
           - type: custom:button-card
             name: >
               <ha-icon icon="mdi:tablet"></ha-icon> Tablet
-            tap_action:
-              !include popup/footer_tablet.yaml
+            tap_action: !include popup/footer_tablet.yaml
             variables:
               notify: >
                 [[[
@@ -535,8 +511,7 @@ views:
           - type: custom:button-card
             name: >
               <ha-icon icon="mdi:battery"></ha-icon> Batterien
-            tap_action:
-              !include popup/footer_battery.yaml
+            tap_action: !include popup/footer_battery.yaml
             variables:
               notify: >
                 [[[
