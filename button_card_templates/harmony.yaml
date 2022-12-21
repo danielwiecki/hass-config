@@ -75,7 +75,7 @@ harmony:
             template:
               - icon_tv
               - base_medium
-              - tilt-disabled
+              - tilt_disabled
               - loader_centered
           
           - type: custom:button-card
@@ -84,5 +84,5 @@ harmony:
             template:
               - icon_monitors
               - base_medium
-              - tilt-disabled
+              - tilt_disabled
               - loader_centered

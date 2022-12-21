@@ -1,6 +1,6 @@
 # dashboard resource https://micku7zu.github.io/vanilla-tilt.js/
 
-tilt-disabled:
+tilt_disabled:
   variables:
     tilt_enable: false
 
