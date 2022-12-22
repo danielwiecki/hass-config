@@ -166,10 +166,10 @@ views:
               threshold: 5
             cards:
               - type: custom:button-card
-                entity: sensor.trakt_upcoming_calendar
+                entity: sensor.trakt_upcoming_shows
                 name: TV
-                template:
-                  - trakt
+#                template:
+#                  - trakt
 
               - type: grid
                 columns: 2
@@ -462,6 +462,11 @@ views:
             template:
               - person
               - icon_home
+
+          - type: custom:button-card
+            entity: none
+            template:
+              - energy
 
       #################################################
       #                                               #

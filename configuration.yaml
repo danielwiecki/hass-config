@@ -32,8 +32,7 @@ lovelace:
       { url: /hacsfiles/harmony-card/harmony-card.js,                               type: module },
       { url: /hacsfiles/kiosk-mode/kiosk-mode.js,                                   type: module },
       { url: /hacsfiles/custom-icons/custom-icons.js,                               type: module },
-      { url: /hacsfiles/power-usage-card-regex/power-usage-card-regex.js,           type: module },
-
+      { url: /hacsfiles/apexcharts-card/apexcharts-card.js,                         type: module },
 
       { url: '/local/marked.min.js?v=4.2.1',                                        type: module },
       { url: '/local/vanilla-tilt.min.js?v=1.7.3',                                  type: module },

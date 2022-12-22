@@ -43,18 +43,15 @@ themes:
     ha-card-header-background-color: rgba(48,52,52,0.8)
     custom-layout-card-padding: 3.3vw
 
-    sidebar-time-font-size: 5.2vw
-    sidebar-time-line-height: 4.3vw
-    sidebar-font-size: 1.42vw
-    sidebar-line-height: 2vw
-    bar-card-color: "#303435"
-
     #button_card_templates
     button-card-font-size: 1.1vw
     z-axis-adjustment: 0.05vw #tilt compensation
     button-card-font-weight: 500
     button-card-letter-spacing: normal
     button-card-border-radius: 10%
+
+    button-card-background-color-active: rgba(255, 255, 255, 0.85)
+    button-card-background-color-inactive: rgba(115, 115, 115, 0.25)
 
     footer-card-font-size: 1.22vw
     footer-card-icon-size: 1.5vw
