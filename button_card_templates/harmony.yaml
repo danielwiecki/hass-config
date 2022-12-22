@@ -36,6 +36,37 @@ harmony:
           - name: Kodi Video
             device: Kodi
             icon: mdi:kodi
+        buttons:
+            skip_back:
+              hide: true
+            play:
+              hide: true
+            pause:
+              hide: true
+            skip_forward:
+              hide: true
+            dpad_up:
+              hide: true
+            dpad_down:
+              hide: true
+            dpad_right:
+              hide: true
+            dpad_left:
+              hide: true
+            dpad_center:
+              hide: true
+            xbox:
+              hide: true
+            back:
+              hide: true
+            a:
+              hide: true
+            b:
+              hide: true
+            x:
+              hide: true
+            y:
+              hide: true
         card_mod:
           style: |
             :host {
@@ -61,9 +92,6 @@ harmony:
             }
             ha-card ha-icon-button {
               color: white;
-            }
-            ha-card .remote, ha-card .xbox-buttons, ha-card .play-pause {
-              display: none;
             }
     devices:
       card:
