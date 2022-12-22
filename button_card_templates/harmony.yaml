@@ -1,14 +1,23 @@
 harmony:
   template:
     - base
-    - styles_harmony
-    - no_labels
-  state_display: >
-    [[[ return '&nbsp;'; ]]]
-  tap_action:
-    action: none
-  hold_action:
-    action: none
+  styles:
+    card:
+      - background-color: var(--button-card-background-color-inactive)
+    grid:
+      - display: flex
+      - flex-direction: column
+      - justify-content: space-between
+    custom_fields:
+      harmony:
+        - height: 100%
+        - width: 100%
+      devices:
+        - width: 100%
+  tap_action: none
+  hold_action: none
+  show_name: false
+  show_state: false
   custom_fields:
     harmony:
       card:

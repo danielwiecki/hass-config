@@ -1,9 +1,35 @@
 loader:
-  template:
-    - styles_loader
-  custom_fields:
-    loader: >
-      <img src="/local/loader.svg" width="100%">
+  styles:
+    custom_fields:
+      loader:
+        - display: none
+        - top: >
+            [[[
+              return variables.tilt_enable
+                  ? '-6%'
+                  : '6%';
+            ]]]
+        - right: >
+            [[[
+              return variables.tilt_enable
+                  ? '-0.5%'
+                  : '6.5%';
+            ]]]
+        - width: >
+            [[[
+              return variables.tilt_enable
+                  ? '52%'
+                  : '42%';
+            ]]]
+        - position: absolute
+        - opacity: 0.5
+        - pointer-events: none
+        - filter: >
+            [[[
+              return variables.state_on
+                  ? 'none'
+                  : 'invert(1)';
+            ]]]
   tap_action:
     loader: >
       [[[
@@ -19,8 +45,16 @@ loader:
             loader('loader', 'initial', 'none');
         }
       ]]]
+  custom_fields:
+    loader: >
+      <img src="/local/loader.svg" width="100%">
 
 loader_centered:
   template:
     - loader
-    - styles_loader_centered
+  styles:
+    custom_fields:
+      loader:
+        - top: inherit
+        - right: inherit
+        - justify-self: center

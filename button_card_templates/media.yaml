@@ -5,13 +5,35 @@
 #################################################
 
 base_media:
-  template:
-    - styles_media
   variables:
     media_on: >
       [[[ return !entity || ['playing', 'paused'].indexOf(entity.state) !== -1; ]]]
     media_off: >
       [[[ return !entity || ['off', 'idle', 'standby', 'unknown', 'unavailable'].indexOf(entity.state) !== -1; ]]]
+  styles:
+    card:
+      - color: >
+          [[[
+            if (variables.is_youtube) {
+                return `#efefef`;
+            } else {
+                return variables.media_on && variables.entity_picture === undefined
+                    ? 'rgba(0, 0, 0, 0.6)'
+                    : variables.media_off
+                        ? '#97989c'
+                        : '#efefef';
+            }
+          ]]]
+      - text-shadow: >
+          [[[
+            if (variables.is_youtube) {
+                return `1px 1px 5px rgba(18, 22, 23, 0.9)`;
+            } else {
+                return variables.media_off || variables.entity_picture === undefined
+                    ? 'none'
+                    : '1px 1px 5px rgba(18, 22, 23, 0.9)';
+            }
+          ]]]
   tap_action:
     action: >
       [[[
@@ -25,8 +47,6 @@ base_media:
         [[[
           return variables.entity_id;
         ]]]
-  double_tap_action:
-    action: more-info
 
 #################################################
 #                                               #

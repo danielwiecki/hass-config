@@ -1,0 +1,48 @@
+energy:
+  template:
+    - base
+  styles:
+    grid:
+      - display: flex
+      - align-items: center
+  show_name: false
+  show_state: false
+  custom_fields:
+    energy:
+      card:
+        type: "custom:apexcharts-card"
+        chart_type: "donut"
+        apex_config:
+          chart:
+            type: "donut"
+            animations:
+              enabled: true
+            height: "100%"
+            width: "100%"
+          legend:
+            show: false
+          grid:
+            show: false
+          dataLabels:
+            enabled: false
+        series:
+          - entity: sensor.power_consumption_1
+            name: Desk Right
+          - entity: sensor.power_consumption_2
+            name: Desk Left
+          - entity: sensor.power_consumption_3
+            name: Lowboard Right
+          - entity: sensor.power_consumption_4
+            name: Lowboard Left
+          - entity: sensor.power_consumption_5
+            name: Aircooler
+          - entity: sensor.power_consumption_6
+            name: Kaffeeautomat
+        card_mod:
+          style: |
+            ha-card {
+              border: none;
+            }
+            ha-card #graph svg path {
+              stroke-width: 0;
+            }

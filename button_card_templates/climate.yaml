@@ -3,8 +3,6 @@ climate:
     - base
     - circle
     - loader
-  double_tap_action:
-    action: more-info
   state_display: >
     [[[ 
         if (variables.state_on) {

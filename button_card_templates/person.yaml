@@ -2,7 +2,13 @@ person:
   template:
     - base
     - circle
-    - styles_person
+  styles:
+    custom_fields:
+      icon:
+        - clip-path: circle()
+        - width: 82%
+        - pointer-events: none
+        - display: grid
   state_display: >
     [[[
       if (entity) {
@@ -14,7 +20,6 @@ person:
       }
       return variables.translate_unknown;
     ]]]
-  triggers_update: sensor.time
   tap_action:
     action: none
   custom_fields:
