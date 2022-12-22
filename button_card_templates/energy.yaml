@@ -1,6 +1,7 @@
 energy:
   template:
     - base
+    - icon_energy
   styles:
     grid:
       - display: flex
@@ -42,6 +43,7 @@ energy:
           style: |
             ha-card {
               border: none;
+              overflow: visible !important;
             }
             ha-card #graph svg path {
               stroke-width: 0;
