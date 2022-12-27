@@ -16,23 +16,23 @@ icon_volume_down:
   custom_fields:
     icon: >
       <svg viewBox="0 0 16 16">
-        <path fill="#9da0a2" d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4zm3.025 4a4.486 4.486 0 0 1-1.318 3.182L10 10.475A3.489 3.489 0 0 0 11.025 8 3.49 3.49 0 0 0 10 5.525l.707-.707A4.486 4.486 0 0 1 12.025 8z"/>
+        <path fill="var(--state-icon-color)" d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4zm3.025 4a4.486 4.486 0 0 1-1.318 3.182L10 10.475A3.489 3.489 0 0 0 11.025 8 3.49 3.49 0 0 0 10 5.525l.707-.707A4.486 4.486 0 0 1 12.025 8z"/>
       </svg>
 
 icon_volume_up:
   custom_fields:
     icon: >
       <svg viewBox="0 0 16 16">
-        <path fill="#9da0a2" d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
-        <path fill="#9da0a2" d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
-        <path fill="#9da0a2" d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+        <path fill="var(--state-icon-color)" d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+        <path fill="var(--state-icon-color)" d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+        <path fill="var(--state-icon-color)" d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
       </svg>
 
 icon_volume_mute:
   custom_fields:
     icon: >
       <svg viewBox="0 0 16 16">
-        <path fill="#9da0a2" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+        <path fill="var(--state-icon-color)" d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
       </svg>
 
 icon_trakt:
@@ -163,7 +163,7 @@ icon_hue:
                 transform-origin: center;
               }
             </style>
-            <path fill="#9da0a2" d="M27.4 47.3h-4.9s-.7.1-.7.8.4.9.7.9h4.9c.3 0 .7-.1.7-.9s-.7-.8-.7-.8zm3.3-2.9H19.3s-.8 0-.8.8.6.9.8.9h11.5c.2 0 .8-.1.8-.9-.1-.8-.9-.8-.9-.8zm0-3H19.3s-.8 0-.8.8.6.9.8.9h11.5c.2 0 .8-.1.8-.9-.1-.8-.9-.8-.9-.8zm0-2.9H19.3s-.8 0-.8.8.6.9.8.9h11.5c.2 0 .8-.1.8-.9s-.9-.8-.9-.8zm5.2-23.2c-3.3-5.3-7-5.6-10.9-5.6-3.8 0-8.4.4-10.9 5.6-.1.1-.1.3.1.7.4.8 3.3 7.2 3.2 18.8 0 1.1-.1 1.6 0 1.7 0 .1 0 .7 1.1.7h13c1 0 1-.5 1.1-.7v-1.7c-.1-11.6 2.8-18 3.2-18.8.1-.4.1-.5.1-.7"/>
+            <path fill="var(--state-icon-color)" d="M27.4 47.3h-4.9s-.7.1-.7.8.4.9.7.9h4.9c.3 0 .7-.1.7-.9s-.7-.8-.7-.8zm3.3-2.9H19.3s-.8 0-.8.8.6.9.8.9h11.5c.2 0 .8-.1.8-.9-.1-.8-.9-.8-.9-.8zm0-3H19.3s-.8 0-.8.8.6.9.8.9h11.5c.2 0 .8-.1.8-.9-.1-.8-.9-.8-.9-.8zm0-2.9H19.3s-.8 0-.8.8.6.9.8.9h11.5c.2 0 .8-.1.8-.9s-.9-.8-.9-.8zm5.2-23.2c-3.3-5.3-7-5.6-10.9-5.6-3.8 0-8.4.4-10.9 5.6-.1.1-.1.3.1.7.4.8 3.3 7.2 3.2 18.8 0 1.1-.1 1.6 0 1.7 0 .1 0 .7 1.1.7h13c1 0 1-.5 1.1-.7v-1.7c-.1-11.6 2.8-18 3.2-18.8.1-.4.1-.5.1-.7"/>
             <path class="${state} light-color" d="M14.1 15.3c3.4-.3 7-.4 10.9-.4 3.8 0 7.5.2 10.9.4.4-.4.7-.8.9-1.1C39 8.5 38.9 6.5 38.9 6c-.2-4.4-8.4-5-12.1-5h0-3.4c-3.7 0-12 .5-12.1 5 0 .5-.1 2.5 2.1 8.2 0 .3.3.8.7 1.1z"/>
           </svg>
         `;
@@ -208,7 +208,7 @@ icon_shade:
                 transform-origin: center;
               }
             </style>
-            <path fill="#9da0a2" d="M26.4 25.6c.6-.3 1.1-.7 1.1-1.3L25 17.9l-2.5 6.4c0 .7.6 1.1 1.1 1.3v20.8h-5.5v2.7h13.7v-2.7h-5.5V25.6z"/>
+            <path fill="var(--state-icon-color)" d="M26.4 25.6c.6-.3 1.1-.7 1.1-1.3L25 17.9l-2.5 6.4c0 .7.6 1.1 1.1 1.3v20.8h-5.5v2.7h13.7v-2.7h-5.5V25.6z"/>
             <path class="${state} light-color" d="M24.6.9l-9.4.5c-.6.1-1.9 0-2.5 2.1s-2.4 9.1-4 16.9c-.2.7-.5 2-.5 2.3s-.4 1.6.9 1.6c.8.1 7.4.3 15.9.3 8.6 0 15.1-.3 15.9-.3 1.3-.1.9-1.3.9-1.6s-.3-1.6-.5-2.3c-1.6-7.8-3.4-14.8-4-16.9s-1.9-2-2.5-2.1c-1.6-.2-6.9-.4-9.4-.5"/>
           </svg>
         `;
@@ -224,7 +224,7 @@ icon_tv:
             [[[
               return variables.state_on
                   ? '#616161'
-                  : '#9da0a2';
+                  : 'var(--state-icon-color)';
             ]]]
   custom_fields:
     icon: >
@@ -352,7 +352,7 @@ icon_ps5:
               </svg>`
             : `
               <svg viewBox="0 0 50 50">
-                <path fill="#9da0a2" d="M43.8 37h-.1l-10.6 4-4.2 1.6v-4.9l8-2.9 1.9-.7c3.8-1.3 2.2-2.7-1.8-1.9l-3.8 1.3-4.3 1.6v-4.5c3.1-1 6.3-1.6 9.5-1.4 5.3.4 8.7 1.6 9.1 3.9.3 1.4-.9 2.9-3.7 3.9zm-26.7-2.1l-.9.3-3.6 1.3c-2.2.8-4.1-1.1-2.1-1.9l1.7-.6 5-1.9v-4.2l-.6.2L6 31.9h-.1c-1.9.7-3.8 2.2-3.7 4.2.1 2.1 4.7 2.6 8.2 3.2 2.4.4 4.6.3 6.7-.1v-4.3zm12.4-20V28c5.7 1.7 8.7-.9 8.7-7.6.1-5.7-3.6-9-9.6-10.7l-9.3-2.6v33.8l7.2 2.5.1.1V14.6c.1-1.4 2.9-1.3 2.9.3z"/>
+                <path fill="var(--state-icon-color)" d="M43.8 37h-.1l-10.6 4-4.2 1.6v-4.9l8-2.9 1.9-.7c3.8-1.3 2.2-2.7-1.8-1.9l-3.8 1.3-4.3 1.6v-4.5c3.1-1 6.3-1.6 9.5-1.4 5.3.4 8.7 1.6 9.1 3.9.3 1.4-.9 2.9-3.7 3.9zm-26.7-2.1l-.9.3-3.6 1.3c-2.2.8-4.1-1.1-2.1-1.9l1.7-.6 5-1.9v-4.2l-.6.2L6 31.9h-.1c-1.9.7-3.8 2.2-3.7 4.2.1 2.1 4.7 2.6 8.2 3.2 2.4.4 4.6.3 6.7-.1v-4.3zm12.4-20V28c5.7 1.7 8.7-.9 8.7-7.6.1-5.7-3.6-9-9.6-10.7l-9.3-2.6v33.8l7.2 2.5.1.1V14.6c.1-1.4 2.9-1.3 2.9.3z"/>
               </svg>`;
       ]]]
 
@@ -435,7 +435,7 @@ icon_spot:
                 transform-origin: 40% 20%;
               }
             </style>
-            <path style="clip-path: url(#mask);" fill="#9da0a2" d="M40.5.8H17.1c-.1 0-.1 0-.1.1A3.12 3.12 0 0 0 20.1 4h6.1c.1 0 .1 0 .1.1v7.4L18 19.1l3.6 3.5 9.1-8.6c.4-.4.6-1 .7-1.6V4c0-.1 0-.1.1-.1h6c1.7.1 3.1-1.3 3-3.1z"/>
+            <path style="clip-path: url(#mask);" fill="var(--state-icon-color)" d="M40.5.8H17.1c-.1 0-.1 0-.1.1A3.12 3.12 0 0 0 20.1 4h6.1c.1 0 .1 0 .1.1v7.4L18 19.1l3.6 3.5 9.1-8.6c.4-.4.6-1 .7-1.6V4c0-.1 0-.1.1-.1h6c1.7.1 3.1-1.3 3-3.1z"/>
             <defs>
               <clipPath id="mask">
                 <path class="${state}" d="M0 9.1h24l8.3 8.8H50V-9H0z"/>
@@ -454,7 +454,7 @@ icon_imac:
         - margin-left: 1%
         - margin-top: -5%
         - fill: >
-            [[[ return variables.state_on ? '#72757c' : '#9da0a2'; ]]]
+            [[[ return variables.state_on ? '#72757c' : 'var(--state-icon-color)'; ]]]
   custom_fields:
     icon: >
       [[[
@@ -571,7 +571,7 @@ icon_monitors:
             `
             : `
               <svg viewBox="0 0 50 50">
-                <path fill="#9da0a2" d="M25 18.6c-4.6 0-8.4 3.8-8.4 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4-3.7-8.4-8.4-8.4zm0 11.7a3.33 3.33 0 0 1-3.3-3.3 3.33 3.33 0 0 1 3.3-3.3 3.33 3.33 0 0 1 3.3 3.3c0 1.8-1.4 3.3-3.3 3.3zM39.2 1H10.9C9.4 1 8.3 2.1 8.3 3.6v42.9a2.65 2.65 0 0 0 2.6 2.6h28.3a2.65 2.65 0 0 0 2.6-2.6v-43C41.7 2 40.5.9 39.2 1zM25 7c1.3 0 2.4 1.1 2.4 2.4s-1.1 2.4-2.4 2.4-2.4-1.1-2.4-2.4S23.7 7 25 7zm10.3 35.5l-.4 1.9s-.2.6-.6.6H15.8c-.4 0-.6-.6-.6-.6l-.4-1.9c-.2-.9.6-.9.6-.9h19.3s.9.1.6.9zM25 38.2c-6.2 0-11.3-5.1-11.3-11.3a11.29 11.29 0 1 1 22.6 0c.1 6.3-5 11.3-11.3 11.3z"/>
+                <path fill="var(--state-icon-color)" d="M25 18.6c-4.6 0-8.4 3.8-8.4 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4-3.7-8.4-8.4-8.4zm0 11.7a3.33 3.33 0 0 1-3.3-3.3 3.33 3.33 0 0 1 3.3-3.3 3.33 3.33 0 0 1 3.3 3.3c0 1.8-1.4 3.3-3.3 3.3zM39.2 1H10.9C9.4 1 8.3 2.1 8.3 3.6v42.9a2.65 2.65 0 0 0 2.6 2.6h28.3a2.65 2.65 0 0 0 2.6-2.6v-43C41.7 2 40.5.9 39.2 1zM25 7c1.3 0 2.4 1.1 2.4 2.4s-1.1 2.4-2.4 2.4-2.4-1.1-2.4-2.4S23.7 7 25 7zm10.3 35.5l-.4 1.9s-.2.6-.6.6H15.8c-.4 0-.6-.6-.6-.6l-.4-1.9c-.2-.9.6-.9.6-.9h19.3s.9.1.6.9zM25 38.2c-6.2 0-11.3-5.1-11.3-11.3a11.29 11.29 0 1 1 22.6 0c.1 6.3-5 11.3-11.3 11.3z"/>
               </svg>
             `;
       ]]]
@@ -579,12 +579,14 @@ icon_monitors:
 icon_ceiling_light:
   styles:
     custom_fields:
-      icon_ceiling_light:
-        [fill: grey, top: 7%, left: 4.5%, width: 4.5vw, position: absolute]
+      icon:
+        - width: 100%
+        - margin-left: -14%
+        - margin-top: -14%
   custom_fields:
-    icon_ceiling_light: >
+    icon: >
       [[[
-        let state = variables.state_on && variables.timeout < 2000 ? 'animate' : null;
+        let state = variables.state_on ? 'on' : null;
         return `
           <svg viewBox="0 0 24 24">
             <style>
@@ -608,15 +610,15 @@ icon_ceiling_light:
                   transform: scale(1);
                 }
               }
-              .animate {
+              .on {
                 animation: animate 0.8s; 
                 transform-origin: center;
               }
             </style>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M8,9H11V4H13V9H16L20,17H4L8,9M14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18H14Z" />
+              <path fill="var(--state-icon-color)" d="M8,9H11V4H13V9H16L20,17H4L8,9M14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18H14Z" />
             </svg>
-            <path class="${state}" fill="var(--button-card-light-color-no-temperature)" d="m 8,9 c 8,0 0.7559689,0 8,0 l 4,8 H 4 L 8,9"/>
+            <path class="${state} light-color" d="m 8,9 c 8,0 0.7559689,0 8,0 l 4,8 H 4 L 8,9"/>
           </svg>`;
       ]]]
 
@@ -655,7 +657,7 @@ icon_lamp:
                 transform-origin: center;
               }
             </style>
-            <path fill="#9da0a2" d="M26.5 21.8l3.8-6.1H19.7l3.8 6.1c-5 .7-6.3 5.8-5.7 10.2.7 5.1 3.2 10.1 5.7 14.4H19v2.5h11.8v-2.5h-4.5C29 42 31.4 37 32.1 32c.6-4.4-.6-9.4-5.6-10.2zm3.1 9.1c-.3 4.3-2.3 8.7-4.4 12.4l-.2.1v.1-.1c-1.8-3-3.3-6.4-4.1-9.7-.7-3.1-1-7.2 2.7-8.4 1.4-.5 3.1-.1 4.2.8 1.6 1 1.8 3 1.8 4.8z"/>
+            <path fill="var(--state-icon-color)" d="M26.5 21.8l3.8-6.1H19.7l3.8 6.1c-5 .7-6.3 5.8-5.7 10.2.7 5.1 3.2 10.1 5.7 14.4H19v2.5h11.8v-2.5h-4.5C29 42 31.4 37 32.1 32c.6-4.4-.6-9.4-5.6-10.2zm3.1 9.1c-.3 4.3-2.3 8.7-4.4 12.4l-.2.1v.1-.1c-1.8-3-3.3-6.4-4.1-9.7-.7-3.1-1-7.2 2.7-8.4 1.4-.5 3.1-.1 4.2.8 1.6 1 1.8 3 1.8 4.8z"/>
             <path class="${state} light-color" d="M38.1 20L35.7 3.8c-.3-1.9-.4-1.7-.6-2-.9-.6-2.3-.7-2.3-.7H17.4s-1.4 0-2.3.7c-.2.3-.3.1-.6 2C14 5.7 11.9 20 11.9 20s5.8.3 13.4.3h0c7.3 0 12.8-.3 12.8-.3z"/>
           </svg>
         `;
@@ -668,7 +670,7 @@ icon_climate:
         - width: 78%
         - margin-left: -10%
         - fill: >
-            [[[ return variables.state === 'cool' || variables.state === 'fan_only' ? '#5daeea' : '#9da0a2'; ]]]
+            [[[ return variables.state === 'cool' || variables.state === 'fan_only' ? '#5daeea' : 'var(--state-icon-color)'; ]]]
   custom_fields:
     icon: >
       <svg viewBox="0 0 50 50">
@@ -869,15 +871,9 @@ icon_energy:
             }
           </style>
           <svg class="circle" viewBox="0 0 50 50">
-            <circle style="fill: rgb(255, 208, 91);" cx="25.11" cy="24.522" r="18.677"></circle>
-            <g transform="matrix(0.084123, 0, 0, 0.084123, 3.743143, 3.155347)">
-              <path style="fill:#324A5E;" d="M254.8,188.4l-26-26L305.2,86c3.6-3.6,9.2-3.6,12.8,0l13.2,13.2c3.6,3.6,3.6,9.2,0,12.8L254.8,188.4z"></path>
-              <path style="fill:#324A5E;" d="M345.6,279.2l-26-26l76.4-76.4c3.6-3.6,9.2-3.6,12.8,0L422,190c3.6,3.6,3.6,9.2,0,12.8L345.6,279.2z"></path>
-            </g>
-            <path style="fill: #9da0a2" d="M 35.306 27.584 L 22.048 14.326 C 21.409 13.687 20.365 13.687 19.727 14.326 L 12.257 21.796 C 11.617 22.436 11.617 23.479 12.257 24.119 L 13.165 25.027 L 11.415 26.776 C 11.078 27.113 11.078 27.685 11.415 28.056 C 11.751 28.391 11.751 28.963 11.415 29.334 L 11.011 29.737 C 10.675 30.075 10.675 30.647 11.011 31.017 L 18.616 38.621 C 18.953 38.958 19.525 38.958 19.894 38.621 L 20.299 38.218 C 20.635 37.88 21.207 37.88 21.577 38.218 C 21.913 38.553 22.485 38.553 22.855 38.218 L 24.606 36.468 L 25.514 37.376 C 26.154 38.015 27.197 38.015 27.836 37.376 L 35.306 29.906 C 35.945 29.266 35.945 28.224 35.306 27.584 Z"></path>
-            <g transform="matrix(0.031958, 0, 0, 0.031958, 16.290567, 21.687023)" style="">
-              <polygon style="fill:#F7CF52;" points="157.055,0 90.798,196.319 164.417,196.319 88.344,400 289.571,159.509 218.405,159.509 311.656,0"></polygon>
-            </g>
+            <circle cx="24.872" cy="24.834" r="14.614" fill="#013668" />
+            <path fill="#ffb300" d="M 36.197 7.069 L 19.39 21.198 L 22.949 22.148 L 17.53 27.367 L 22.172 28.608 L 13.554 42.599 L 29.43 27.589 L 25.58 26.562 L 31.048 21.141 L 26.904 20.031 L 36.197 7.069 Z" />
+            <path fill="none" d="M 1.188 1.15 L 48.563 1.15 L 48.563 48.525 L 1.188 48.525 L 1.188 1.15 Z" />
           </svg>
         `;
       ]]]
@@ -906,7 +902,7 @@ icon_closet:
               @keyframes state {
                 0% {
                   transform: none;
-                  fill: #9da0a2;
+                  fill: var(--state-icon-color);
                 }
                 100% {
                   transform: skewY(10deg) translate(4.5%, -3.9%) scaleX(0.8);
@@ -958,7 +954,7 @@ icon_closet:
             @keyframes state {
               0% {
                 transform: none;
-                fill: #9da0a2;
+                fill: var(--state-icon-color);
               }
               100% {
                 transform: skewY(10deg) translate(4.5%, -3.9%) scaleX(0.8);
@@ -1001,7 +997,7 @@ icon_away:
         - margin-left: -1%
         - margin-top: -1%
         - fill: >
-            [[[ return variables.state_on ? '#516d82' : '#9da0a2'; ]]]
+            [[[ return variables.state_on ? '#516d82' : 'var(--state-icon-color)'; ]]]
   custom_fields:
     icon: >
       [[[
@@ -1050,7 +1046,7 @@ icon_home:
         - width: 72%
         - margin-left: -1%
         - fill: >
-            [[[ return variables.state_on ? '#c7983e' : '#9da0a2'; ]]]
+            [[[ return variables.state_on ? '#c7983e' : 'var(--state-icon-color)'; ]]]
   custom_fields:
     icon: >
       [[[
@@ -1109,73 +1105,47 @@ icon_ledstripe:
         let state = variables.state_on && variables.timeout < 2000 ? 'on' : null;
         return `
           <svg viewBox="0 0 1000 1000">
-            <style>
-              @keyframes on {
-                0% {
-                  transform: scale(0.85);
-                }
-                20% {
-                  transform: scale(1.1);
-                }
-                40% {
-                  transform: scale(0.95);
-                }
-                60% {
-                  transform: scale(1.03);
-                }
-                80% {
-                  transform: scale(0.97);
-                }
-                100% {
-                  transform: scale(1);
-                }
-              }
-              .on {
-                animation: on 0.0s;
-                transform-origin: center;
-              }
-            </style>
             <g transform="matrix(0.9132 0 0 0.5374 160.0803 150.5775)" id="302336">
               <path style="stroke: rgb(0,153,255); stroke-width: 5; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-46.5001, -78.5)" d="M 2.6167 78.5 C 2.6167 57.2341 7.7391 38.064 15.8764 24.2946 C 24.0482 10.4665 34.9664 2.5 46.5001 2.5 C 58.0338 2.5 68.952 10.4665 77.1238 24.2946 C 85.2611 38.064 90.3835 57.2341 90.3835 78.5 C 90.3835 99.7659 85.2611 118.936 77.1238 132.705 C 68.952 146.533 58.0338 154.5 46.5001 154.5 C 34.9664 154.5 24.0482 146.533 15.8764 132.705 C 7.7391 118.936 2.6167 99.7659 2.6167 78.5 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 836.6667 816.6667)" id="673002">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 643.3333 816.6667)" id="692091">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 465 816.6667)" id="373587">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 273.3333 816.6667)" id="920015">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 236.6667 553.3333)" id="706203">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 418.3333 515)" id="750381">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 796.6667 433.3333)" id="600502">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 591.6667 480)" id="976047">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 170 150.579)" id="17941">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 350 150.579)" id="609102">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 550 150.579)" id="951104">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(1 0 0 1 731.6667 150.579)" id="14399">
-              <path class="${state}" fill="var(--light-color)" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
+              <path class="light-color" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none;  fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 67.5 135 C 104.779 135 135 104.779 135 67.5 C 135 30.2208 104.779 0 67.5 0 C 30.2208 0 0 30.2208 0 67.5 C 0 104.779 30.2208 135 67.5 135 Z" stroke-linecap="round"/>
               </g>
               <g transform="matrix(50.5051 0 0 50.5051 500.0004 491.3674)" id="361987">
-              <path style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: #9da0a2; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-12, -12)" d="M 6.33 12.5 c 0.41 -0.09 0.8 0.17 0.89 0.58 c 0.09 0.4 -0.17 0.8 -0.57 0.89 c -0.41 0.09 -0.8 -0.17 -0.89 -0.57 C 5.67 12.99 5.93 12.59 6.33 12.5 M 10 11.71 c 0.4 -0.09 0.8 0.17 0.89 0.57 c 0.09 0.41 -0.17 0.8 -0.57 0.89 C 9.91 13.26 9.51 13 9.42 12.6 C 9.33 12.2 9.59 11.8 10 11.71 M 13.66 10.92 c 0.41 -0.09 0.8 0.17 0.89 0.57 c 0.09 0.41 -0.17 0.8 -0.57 0.89 c -0.4 0.09 -0.8 -0.17 -0.89 -0.57 C 13 11.4 13.25 11 13.66 10.92 M 17.32 10.12 c 0.41 -0.09 0.8 0.17 0.89 0.57 c 0.09 0.4 -0.17 0.8 -0.57 0.89 c -0.41 0.09 -0.8 -0.17 -0.89 -0.57 C 16.66 10.61 16.92 10.21 17.32 10.12 M 8 15.48 l 11.1 -2.4 c 0.81 -0.17 1.32 -0.97 1.15 -1.78 c -0.42 -1.94 -2.33 -3.17 -4.26 -2.75 L 4.89 10.95 c -0.81 0.18 -1.32 0.97 -1.15 1.78 C 4.16 14.66 6.07 15.9 8 15.48 M 18.75 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 18.34 18 18.75 18 s 0.75 0.34 0.75 0.75 S 19.16 19.5 18.75 19.5 M 15 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 14.59 18 15 18 s 0.75 0.34 0.75 0.75 S 15.41 19.5 15 19.5 M 11.25 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 10.84 18 11.25 18 S 12 18.34 12 18.75 S 11.66 19.5 11.25 19.5 M 7.5 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 7.09 18 7.5 18 s 0.75 0.34 0.75 0.75 S 7.91 19.5 7.5 19.5 M 20.25 16.5 H 6.75 c -3 0 -3.75 -2.25 -3.75 -3 v 3.75 C 3 19.32 4.68 21 6.75 21 h 13.5 c 0.41 0 0.75 -0.34 0.75 -0.75 v -3 C 21 16.84 20.66 16.5 20.25 16.5 M 16.5 6 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 16.09 4.5 16.5 4.5 s 0.75 0.34 0.75 0.75 S 16.91 6 16.5 6 M 12.75 6 C 12.34 6 12 5.66 12 5.25 s 0.34 -0.75 0.75 -0.75 s 0.75 0.34 0.75 0.75 S 13.16 6 12.75 6 M 9 6 C 8.59 6 8.25 5.66 8.25 5.25 S 8.59 4.5 9 4.5 s 0.75 0.34 0.75 0.75 S 9.41 6 9 6 M 5.25 6 C 4.84 6 4.5 5.66 4.5 5.25 S 4.84 4.5 5.25 4.5 S 6 4.84 6 5.25 S 5.66 6 5.25 6 M 17.25 3 H 3.75 C 3.34 3 3 3.34 3 3.75 v 3 C 3 7.16 3.34 7.5 3.75 7.5 h 13.5 c 3 0 3.75 2.25 3.75 3 V 6.75 C 21 4.68 19.32 3 17.25 3" stroke-linecap="round"/>
+              <path style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: var(--state-icon-color); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-12, -12)" d="M 6.33 12.5 c 0.41 -0.09 0.8 0.17 0.89 0.58 c 0.09 0.4 -0.17 0.8 -0.57 0.89 c -0.41 0.09 -0.8 -0.17 -0.89 -0.57 C 5.67 12.99 5.93 12.59 6.33 12.5 M 10 11.71 c 0.4 -0.09 0.8 0.17 0.89 0.57 c 0.09 0.41 -0.17 0.8 -0.57 0.89 C 9.91 13.26 9.51 13 9.42 12.6 C 9.33 12.2 9.59 11.8 10 11.71 M 13.66 10.92 c 0.41 -0.09 0.8 0.17 0.89 0.57 c 0.09 0.41 -0.17 0.8 -0.57 0.89 c -0.4 0.09 -0.8 -0.17 -0.89 -0.57 C 13 11.4 13.25 11 13.66 10.92 M 17.32 10.12 c 0.41 -0.09 0.8 0.17 0.89 0.57 c 0.09 0.4 -0.17 0.8 -0.57 0.89 c -0.41 0.09 -0.8 -0.17 -0.89 -0.57 C 16.66 10.61 16.92 10.21 17.32 10.12 M 8 15.48 l 11.1 -2.4 c 0.81 -0.17 1.32 -0.97 1.15 -1.78 c -0.42 -1.94 -2.33 -3.17 -4.26 -2.75 L 4.89 10.95 c -0.81 0.18 -1.32 0.97 -1.15 1.78 C 4.16 14.66 6.07 15.9 8 15.48 M 18.75 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 18.34 18 18.75 18 s 0.75 0.34 0.75 0.75 S 19.16 19.5 18.75 19.5 M 15 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 14.59 18 15 18 s 0.75 0.34 0.75 0.75 S 15.41 19.5 15 19.5 M 11.25 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 10.84 18 11.25 18 S 12 18.34 12 18.75 S 11.66 19.5 11.25 19.5 M 7.5 19.5 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 7.09 18 7.5 18 s 0.75 0.34 0.75 0.75 S 7.91 19.5 7.5 19.5 M 20.25 16.5 H 6.75 c -3 0 -3.75 -2.25 -3.75 -3 v 3.75 C 3 19.32 4.68 21 6.75 21 h 13.5 c 0.41 0 0.75 -0.34 0.75 -0.75 v -3 C 21 16.84 20.66 16.5 20.25 16.5 M 16.5 6 c -0.41 0 -0.75 -0.34 -0.75 -0.75 S 16.09 4.5 16.5 4.5 s 0.75 0.34 0.75 0.75 S 16.91 6 16.5 6 M 12.75 6 C 12.34 6 12 5.66 12 5.25 s 0.34 -0.75 0.75 -0.75 s 0.75 0.34 0.75 0.75 S 13.16 6 12.75 6 M 9 6 C 8.59 6 8.25 5.66 8.25 5.25 S 8.59 4.5 9 4.5 s 0.75 0.34 0.75 0.75 S 9.41 6 9 6 M 5.25 6 C 4.84 6 4.5 5.66 4.5 5.25 S 4.84 4.5 5.25 4.5 S 6 4.84 6 5.25 S 5.66 6 5.25 6 M 17.25 3 H 3.75 C 3.34 3 3 3.34 3 3.75 v 3 C 3 7.16 3.34 7.5 3.75 7.5 h 13.5 c 3 0 3.75 2.25 3.75 3 V 6.75 C 21 4.68 19.32 3 17.25 3" stroke-linecap="round"/>
               </g>
           </svg>
         `;
