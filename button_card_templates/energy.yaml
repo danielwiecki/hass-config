@@ -17,7 +17,6 @@ energy:
         chart_type: "donut"
         apex_config:
           chart:
-            type: "donut"
             animations:
               enabled: true
             height: "100%"
