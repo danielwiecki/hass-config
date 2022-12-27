@@ -1,13 +1,6 @@
 graph:
   template:
     - base
-  variables:
-    state_on: >
-      [[[
-        if (entity) {
-            return entity.state
-        }
-      ]]]
   styles:
     grid:
       - display: block
