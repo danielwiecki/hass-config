@@ -165,9 +165,9 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-              - type: custom:button-card
-                entity: sensor.trakt_upcoming_shows
-                name: TV
+#              - type: custom:button-card
+#                entity: sensor.trakt_upcoming_shows
+#                name: TV
 #                template:
 #                  - trakt
 
@@ -248,15 +248,9 @@ views:
                   - graph_pressure
 
           - type: custom:button-card
-            entity: climate.thermostat_bad
-            name: Thermostat
-            tap_action:
-              action: call-service
-              service: script.heating_toggle
+            entity: climate.bad
             template:
               - climate
-              - climate_bathroom
-              - icon_bathroom
 
           - type: custom:button-card
             entity: binary_sensor.kontaktsensor_bad
@@ -265,7 +259,7 @@ views:
               action: more-info
             template:
               - base
-              - icon_closet
+              - icon_bathroom
 
       #################################################
       #                                               #
@@ -375,7 +369,7 @@ views:
             name: Schlafzimmer
             template:
               - light
-              - icon_spot
+              - icon_ceiling_light
 
       #################################################
       #                                               #

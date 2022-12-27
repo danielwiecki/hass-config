@@ -1,32 +1,44 @@
 climate:
   template:
     - base
-    - circle
-    - loader
-  state_display: >
-    [[[ 
-        if (variables.state_on) {
-            return variables.translate_heating; 
-        }
-    ]]]
-  variables:
-    circle_max: >
-      [[[
-        if (entity) {
-            return entity.attributes.temperature
-        }
-      ]]]
-    circle_input: >
-      [[[
-        if (entity) {
-            return entity.attributes.temperature
-        }
-      ]]]
-    circle_input_unit: "°C"
-
-climate_bathroom:
-  variables:
-    circle_current: >
-      [[[
-        return parseFloat(states['sensor.multisensor_bad_temperature'].state)
-      ]]]
+  styles:
+    grid:
+      - display: block
+      - height: 100%
+    card:
+      - padding: 3%
+      - background-color: var(--button-card-background-color-inactive)
+    custom_fields:
+      climate:
+        - height: 100%
+  show_name: false
+  show_state: false
+  tap_action: none
+  custom_fields:
+    climate:
+      card:
+        type: "custom:better-thermostat-ui-card"
+        entity: "[[[ return entity.entity_id ]]]"
+        card_mod:
+          style: |
+            :host {
+              height: 100%; 
+            }
+            ha-card {
+              border: none;
+            }
+            ha-card #modes {
+              margin: 10% 0 0 0;
+            }
+            ha-card .main {
+              transform: scale(1);
+            }
+            ha-card .content {
+              margin-top: 0;
+            }
+            ha-card .content text {
+              fill: var()
+            }
+            ha-card .more-info, ha-card .name {
+              display: none !important;
+            }

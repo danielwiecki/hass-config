@@ -6,20 +6,10 @@ base:
   variables:
     state_on: >
       [[[ 
-        if (entity?.attributes?.preset_mode == 'manual') {
-            if (entity?.attributes?.temperature > 5) {
-                return true;
-            }
-        }
-        return ['on', 'home', 'cool', 'fan_only', 'playing', 'unlocked'].indexOf(!entity || entity.state) !== -1; 
+        return ['on', 'home', 'cool', 'fan_only', 'playing', 'unlocked', 'heat'].indexOf(!entity || entity.state) !== -1;
       ]]]
     state: >
       [[[ 
-        if (entity?.attributes?.preset_mode == 'manual') {
-            if (entity?.attributes?.temperature > 5) {
-                return 'on';
-            }
-        }
         return !entity || entity.state; 
       ]]]
     entity_id: >
@@ -127,7 +117,6 @@ base_small:
           "icon"
           "n"
       - grid-template-columns: 1
-      - grid-template-rows: 1
       - align-items: center
     name:
       - justify-self: center
@@ -139,7 +128,6 @@ base_small:
     custom_fields:
       icon:
         - width: 50%
-        - margin-left: 0
         - justify-self: center
         - margin-left: 0 !important
   show_state: false

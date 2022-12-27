@@ -8,6 +8,6 @@ browser_mod:
       cards:
         - type: "custom:scheduler-card"
           include:
-            - climate.thermostat_bad
+            - climate
             - light
             - switch
