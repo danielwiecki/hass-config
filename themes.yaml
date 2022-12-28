@@ -66,6 +66,10 @@ themes:
 
     button-card-light-color-temp: hsl(204, 58%, 38%)
 
+    button-card-background-color-climate-off: var(--button-card-background-color-inactive)
+    button-card-background-color-climate-auto: "#D3FFDF"
+    button-card-background-color-climate-heat: "#FFCFD3"
+
     #browser_mod.popup
     dialog-backdrop-filter: blur(2em) brightness(0.75)
     popup-background-color: rgba(34,38,39,0.9)

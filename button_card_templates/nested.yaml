@@ -25,6 +25,7 @@ nested_button:
     card:
       - background-color: transparent
       - border: none
+      - align-self: end
   tap_action: none
   show_name: false
   card_mod:

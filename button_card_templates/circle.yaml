@@ -202,17 +202,24 @@ circle:
                                 circle_stroke.style.strokeWidth = 'var(--c-stroke-width)';
                             // on release
                             if (event.type === 'mouseup' || event.type === 'touchend') {
-                                // display loader if brightness is 0
-                                if (circle_slider.value == 0 && elt.getElementById('loader')) {
+                                // display loader if temperature is 5
+                                if (circle_slider.value == 5 && elt.getElementById('loader')) {
                                     elt.getElementById('loader').style.display = 'initial';
                                     elt.getElementById('circle').style.display = 'none';
                                 }
-                                // set temperature
-                                hass.callService('climate', 'set_temperature', {
-                                    entity_id: entity.entity_id,
-                                    temperature: this.value,
-                                    hvac_mode: 'heat'
-                                });
+                                // set temperature or turn off
+                                if (circle_slider.value > 5) {
+                                  hass.callService('climate', 'set_temperature', {
+                                      entity_id: entity.entity_id,
+                                      temperature: this.value,
+                                      hvac_mode: 'heat'
+                                  });
+                                } else {
+                                  hass.callService('climate', 'set_hvac_mode', {
+                                      entity_id: entity.entity_id,
+                                      hvac_mode: 'off'
+                                  });
+                                }
                             }
                         }
                     }

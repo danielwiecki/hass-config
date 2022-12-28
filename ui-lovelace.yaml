@@ -110,6 +110,12 @@ views:
               threshold: 5
             cards:
               - type: custom:button-card
+                entity: climate.wohnzimmer
+                template:
+                  - climate
+                  - icon_heater
+
+              - type: custom:button-card
                 entity: sensor.multisensor_wohnzimmer_temperature
                 template:
                   - graph_temperature
@@ -233,6 +239,12 @@ views:
               threshold: 5
             cards:
               - type: custom:button-card
+                entity: climate.bad
+                template:
+                  - climate
+                  - icon_heater
+
+              - type: custom:button-card
                 entity: sensor.multisensor_bad_temperature
                 template:
                   - graph_temperature
@@ -246,12 +258,6 @@ views:
                 entity: sensor.multisensor_bad_pressure
                 template:
                   - graph_pressure
-
-          - type: custom:button-card
-            entity: climate.bad
-            template:
-              - climate
-              - icon_heater
 
           - type: custom:button-card
             entity: binary_sensor.kontaktsensor_bad
@@ -350,6 +356,12 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
+              - type: custom:button-card
+                entity: climate.schlafzimmer
+                template:
+                  - climate
+                  - icon_heater
+
               - type: custom:button-card
                 entity: sensor.multisensor_schlafzimmer_temperature
                 template:

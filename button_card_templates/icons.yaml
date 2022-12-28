@@ -883,7 +883,6 @@ icon_heater:
     custom_fields:
       icon:
         - width: 77%
-        - margin-left: -5%
   custom_fields:
     icon: >
       [[[

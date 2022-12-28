@@ -2,6 +2,12 @@ climate:
   template:
     - base
     - circle
+  variables:
+    circle_input: "[[[ return entity.attributes.temperature ]]]"
+    circle_min: "[[[ return entity.attributes.min_temp ]]]"
+    circle_max: "[[[ return entity.attributes.max_temp ]]]"
+    circle_step: "[[[ return entity.attributes.target_temp_step ]]]"
+    circle_input_unit: "°C"
   styles:
     grid:
       - grid-template-areas: |
@@ -11,19 +17,8 @@ climate:
           "action_off action_off action_auto action_auto action_heat action_heat"
           "action_off action_off action_auto action_auto action_heat action_heat"
       - grid-template-columns: repeat(6, 1fr)
-    custom_fields:
-      action_off:
-        - align-self: end
-      action_auto:
-        - align-self: end
-      action_heat:
-        - align-self: end
-  variables:
-    circle_input: "[[[ return entity.attributes.temperature ]]]"
-    circle_min: "[[[ return entity.attributes.min_temp ]]]"
-    circle_max: "[[[ return entity.attributes.max_temp ]]]"
-    circle_step: "[[[ return entity.attributes.target_temp_step ]]]"
-    circle_input_unit: "°C"
+    #card:
+      #- background-color: "[[[ return 'var(--button-card-background-color-climate-' + entity.state + ')' ]]]"
   show_name: false
   show_state: false
   tap_action: none
