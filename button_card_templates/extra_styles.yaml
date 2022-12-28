@@ -55,7 +55,7 @@ extra_styles:
           --card-phone: 2.271;
         }
 
-        ${this._config.template.includes('light') ? `
+        ${this._config.template.includes('light') || this._config.template.includes('climate') ? `
 
          /* * * * * * * * * * * * * * * * * *
           *                                 *

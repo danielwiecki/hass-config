@@ -33,7 +33,6 @@ lovelace:
       { url: /hacsfiles/kiosk-mode/kiosk-mode.js,                                   type: module },
       { url: /hacsfiles/custom-icons/custom-icons.js,                               type: module },
       { url: /hacsfiles/apexcharts-card/apexcharts-card.js,                         type: module },
-      { url: /hacsfiles/better-thermostat-ui-card/better-thermostat-ui-card.js,     type: module },
 
       { url: '/local/marked.min.js?v=4.2.1',                                        type: module },
       { url: '/local/vanilla-tilt.min.js?v=1.7.3',                                  type: module },

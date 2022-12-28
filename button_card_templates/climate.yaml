@@ -1,44 +1,93 @@
 climate:
   template:
     - base
+    - circle
   styles:
     grid:
-      - display: block
-      - height: 100%
-    card:
-      - padding: 3%
-      - background-color: var(--button-card-background-color-inactive)
+      - grid-template-areas: |
+          "icon icon icon circle circle circle"
+          "icon icon icon circle circle circle"
+          "current_temperature current_temperature current_temperature current_humidity current_humidity current_humidity"
+          "action_off action_off action_auto action_auto action_heat action_heat"
+          "action_off action_off action_auto action_auto action_heat action_heat"
+      - grid-template-columns: repeat(6, 1fr)
     custom_fields:
-      climate:
-        - height: 100%
+      action_off:
+        - align-self: end
+      action_auto:
+        - align-self: end
+      action_heat:
+        - align-self: end
+  variables:
+    circle_input: "[[[ return entity.attributes.temperature ]]]"
+    circle_min: "[[[ return entity.attributes.min_temp ]]]"
+    circle_max: "[[[ return entity.attributes.max_temp ]]]"
+    circle_step: "[[[ return entity.attributes.target_temp_step ]]]"
+    circle_input_unit: "°C"
   show_name: false
   show_state: false
   tap_action: none
   custom_fields:
-    climate:
+    current_temperature:
       card:
-        type: "custom:better-thermostat-ui-card"
+        type: "custom:button-card"
         entity: "[[[ return entity.entity_id ]]]"
-        card_mod:
-          style: |
-            :host {
-              height: 100%; 
-            }
-            ha-card {
-              border: none;
-            }
-            ha-card #modes {
-              margin: 10% 0 0 0;
-            }
-            ha-card .main {
-              transform: scale(1);
-            }
-            ha-card .content {
-              margin-top: 0;
-            }
-            ha-card .content text {
-              fill: var()
-            }
-            ha-card .more-info, ha-card .name {
-              display: none !important;
-            }
+        template:
+          - nested_info
+        show_state: true
+        state_display: '[[[ return ''<ha-icon icon="mdi:thermometer"></ha-icon> <p>'' + entity.attributes.current_temperature + ''°C</p>'' ]]]'
+        tap_action: none
+    current_humidity:
+      card:
+        type: "custom:button-card"
+        entity: "[[[ return entity.entity_id ]]]"
+        template:
+          - nested_info
+        show_state: true
+        state_display: '[[[ return ''<ha-icon icon="mdi:water-percent"></ha-icon> <p>'' + entity.attributes.current_humidity + ''%</p>'' ]]]'
+        tap_action: none
+    action_off:
+      card:
+        type: "custom:button-card"
+        entity: "[[[ return entity.entity_id ]]]"
+        template:
+          - nested_button
+          - icon_snowflake
+        variables:
+          state_on: "[[[ return entity.state == 'off' ]]]"
+        tap_action:
+          action: call-service
+          service: climate.set_hvac_mode
+          service_data:
+            entity_id: "[[[ return entity.entity_id ]]]"
+            hvac_mode: "off"
+    action_auto:
+      card:
+        type: "custom:button-card"
+        entity: "[[[ return entity.entity_id ]]]"
+        template:
+          - nested_button
+          - icon_leaf
+        variables:
+          state_on: "[[[ return entity.state == 'auto' ]]]"
+        tap_action:
+          action: call-service
+          service: climate.set_hvac_mode
+          service_data:
+            entity_id: "[[[ return entity.entity_id ]]]"
+            hvac_mode: "auto"
+    action_heat:
+      card:
+        type: "custom:button-card"
+        entity: "[[[ return entity.entity_id ]]]"
+        template:
+          - nested_button
+          - icon_flame
+        variables:
+          state_on: "[[[ return entity.state == 'heat' ]]]"
+        tap_action:
+          action: call-service
+          service: climate.set_hvac_mode
+          service_data:
+            entity_id: "[[[ return entity.entity_id ]]]"
+            hvac_mode: "heat"

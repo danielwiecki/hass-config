@@ -17,7 +17,7 @@ circle:
         - display: initial
         - width: 88%
         - margin: -3% 2% 0 0
-        - justify-self: center
+        - justify-self: end
         - opacity: 1
   custom_fields:
     circle: >
@@ -28,17 +28,17 @@ circle:
                 tspan = '<tspan dx=".2" dy="-.4">',
                 domain = entity.entity_id.split('.')[0],
                 state = variables.state_on,
-                max = variables.circle_max || 100,
                 input = variables.circle_input || ' ',
-                current = variables.circle_current || input,
-                unit = variables.circle_input_unit || ' ';
+                unit = variables.circle_input_unit || ' ',
+                min = variables.circle_min || 0,
+                max = variables.circle_max || 100,
+                step = variables.circle_step || 1;
 
            /* * * * * * * * * * * * * * * * * *
             *                                 *
             *             CIRCLE              *
             *                                 *
             * * * * * * * * * * * * * * * * * */
-
             let circle = (state, input, unit) => {
                 return `
                   <svg viewBox="0 0 50 50">
@@ -47,7 +47,7 @@ circle:
                         transform: rotate(-90deg);
                         transform-origin: 50% 50%;
                         stroke-dasharray: ${c};
-                        stroke-dashoffset: ${typeof current === 'number' && c - current / max * c};
+                        stroke-dashoffset: ${typeof input === 'number' && c - input / max * c};
                         stroke-width: var(--c-stroke-width);
                         stroke: ${state ? 'var(--c-stroke-color-on)' : 'var(--c-stroke-color-off)'};
                         fill: ${state ? 'var(--c-fill-color-on)' : 'var(--c-fill-color-off)'};
@@ -69,55 +69,42 @@ circle:
                     <circle id="circle_stroke" cx="25" cy="25" r="${r}"/>
                     <text id="circle_value" x="50%" y="52%">${input}${tspan}${unit}</tspan></text>
                   </svg>
-
-                  ${domain === 'light' && `
-                      <input id="circle_slider" type="range" min="0" max="100" value="${input}">
+                  ${(domain === 'light' || domain === 'climate') && `
+                      <input id="circle_slider" type="range" min="${min}" max="${max}" value="${input}" step="${step}">
                   `}
                 `;
             }
-
            /* * * * * * * * * * * * * * * * * *
             *                                 *
             *              LIGHT              *
             *                                 *
             * * * * * * * * * * * * * * * * * */
-
             if (domain === 'light' && state) {
-
                 // wait 0ms for shadow dom
                 setTimeout(() => {
-
                     // then get elements
                     let elt = this.shadowRoot,
                         circle_slider = elt.getElementById('circle_slider'),
                         circle_value = elt.getElementById('circle_value'),
                         circle_stroke = elt.getElementById('circle_stroke');
-
                     // approximate position of thumb relative to circle
                     circle_slider.style.top = `${(circle_slider.value - 50) / 1.66 - 1}%`;
-
                     // debug position
                     let debug = false;
                     if (debug) circle_slider.style.opacity = 0.3;
-
                     // pass each event to handler
                     ['click', 'input', 'mousedown', 'mouseup', 'touchstart', 'touchend'].forEach((event) => {
                         circle_slider.addEventListener(event, handler, { passive: true })
                     });
-
                     function handler(event) {
-
                         // "this" refers to slider
                         if (event.target === this) {
-
                             // bypass button-card tap_action
                             event.stopPropagation();
-
                             // update circle_value
                             circle_value.innerHTML = `${this.value}${tspan}${unit}</tspan>`;
-
                             // update stroke
-                            circle_stroke.style.strokeDashoffset = c - this.value / 100 * c;
+                            circle_stroke.style.strokeDashoffset = c - this.value / max * c;
                             circle_stroke.style.strokeWidth = 'var(--c-stroke-width-dragging)';
                             
                             // set cursor while dragging
@@ -126,20 +113,16 @@ circle:
                             } else {
                                 this.style.cursor = 'grab';
                             }
-
                             // reset stroke width if value doesn't change
                             if (input == this.value && (event.type === 'click' || event.type === 'touchend'))
                                 circle_stroke.style.strokeWidth = 'var(--c-stroke-width)';
-
                             // on release
                             if (event.type === 'mouseup' || event.type === 'touchend') {
-
                                 // display loader if brightness is 0
                                 if (circle_slider.value == 0 && elt.getElementById('loader')) {
                                     elt.getElementById('loader').style.display = 'initial';
                                     elt.getElementById('circle').style.display = 'none';
                                 }
-
                                 // set brightness
                                 hass.callService('light', 'turn_on', {
                                     entity_id: entity.entity_id,
@@ -149,16 +132,13 @@ circle:
                         }
                     }
                 }, 0);
-
                 return circle(state, input, unit);
             }
-
            /* * * * * * * * * * * * * * * * * *
             *                                 *
             *             PERSON              *
             *                                 *
             * * * * * * * * * * * * * * * * * */
-
             else if (domain === 'person') {
                 let time = c => {
                     let s = (c/1e3),
@@ -177,23 +157,73 @@ circle:
                     unit = ' ';
                 return circle(state, input, unit);
             }
-
            /* * * * * * * * * * * * * * * * * *
             *                                 *
-            *             CLIMATE             *
+            *              CLIMATE            *
             *                                 *
             * * * * * * * * * * * * * * * * * */
-
             else if (domain === 'climate') {
+                state = true;
+                // wait 0ms for shadow dom
+                setTimeout(() => {
+                    // then get elements
+                    let elt = this.shadowRoot,
+                        circle_slider = elt.getElementById('circle_slider'),
+                        circle_value = elt.getElementById('circle_value'),
+                        circle_stroke = elt.getElementById('circle_stroke');
+                    // approximate position of thumb relative to circle
+                    circle_slider.style.top = `${(circle_slider.value - max / 2) / (max / 100 * 1.66) - 1}%`;
+                    // debug position
+                    let debug = false;
+                    if (debug) circle_slider.style.opacity = 0.3;
+                    // pass each event to handler
+                    ['click', 'input', 'mousedown', 'mouseup', 'touchstart', 'touchend'].forEach((event) => {
+                        circle_slider.addEventListener(event, handler, { passive: true })
+                    });
+                    function handler(event) {
+                        // "this" refers to slider
+                        if (event.target === this) {
+                            // bypass button-card tap_action
+                            event.stopPropagation();
+                            // update circle_value
+                            circle_value.innerHTML = `${this.value}${tspan}${unit}</tspan>`;
+                            // update stroke
+                            circle_stroke.style.strokeDashoffset = c - this.value / max * c;
+                            circle_stroke.style.strokeWidth = 'var(--c-stroke-width-dragging)';
+                            
+                            // set cursor while dragging
+                            if (event.type === 'mousedown' || event.type === 'input') {
+                                this.style.cursor = 'grabbing';
+                            } else {
+                                this.style.cursor = 'grab';
+                            }
+                            // reset stroke width if value doesn't change
+                            if (input == this.value && (event.type === 'click' || event.type === 'touchend'))
+                                circle_stroke.style.strokeWidth = 'var(--c-stroke-width)';
+                            // on release
+                            if (event.type === 'mouseup' || event.type === 'touchend') {
+                                // display loader if brightness is 0
+                                if (circle_slider.value == 0 && elt.getElementById('loader')) {
+                                    elt.getElementById('loader').style.display = 'initial';
+                                    elt.getElementById('circle').style.display = 'none';
+                                }
+                                // set temperature
+                                hass.callService('climate', 'set_temperature', {
+                                    entity_id: entity.entity_id,
+                                    temperature: this.value,
+                                    hvac_mode: 'heat'
+                                });
+                            }
+                        }
+                    }
+                }, 0);
                 return circle(state, input, unit);
             }
-
            /* * * * * * * * * * * * * * * * * *
             *                                 *
             *              OTHER              *
             *                                 *
             * * * * * * * * * * * * * * * * * */
-
             else if (variables.state_on) {
                 return circle(state, input, unit);
             }

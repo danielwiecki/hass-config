@@ -3,25 +3,55 @@ nested_presence_sensor_flur:
     grid:
       - grid-template-areas: |
           "icon circle circle"
-          "n presence presence"
-          "s presence presence"
+          "n nested nested"
+          "s nested nested"
   custom_fields:
-    presence:
+    nested:
       card:
         type: "custom:button-card"
         entity: binary_sensor.bewegungsmelder_flur
         template:
-          - base_small
-          - tilt_disabled
+          - nested_button
           - icon_away
-        styles:
-          grid:
-            - grid-template-areas: |
-                "icon"
-        tap_action: none
-        show_name: false
-        card_mod:
-          style: |
-            ha-card {
-              padding-top: 15% !important;
-            }
+
+nested_button:
+  template:
+    - base_medium
+    - tilt_disabled
+  styles:
+    grid:
+      - grid-template-areas: |
+          "icon"
+    card:
+      - background-color: transparent
+      - border: none
+  tap_action: none
+  show_name: false
+  card_mod:
+    style: |
+      ha-card {
+        padding-top: 15% !important;
+      }
+
+nested_info:
+  template:
+    - nested_button
+  aspect_ratio: 2/1
+  styles:
+    grid:
+      - grid-template-areas: |
+          "s s"
+  card_mod:
+    style: |
+      ha-card #state {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+      }
+      ha-card #state > ha-icon {
+        height: 100%;
+      }
+      ha-card #state > p {
+       font-size: 65%;
+      }
