@@ -1,7 +1,6 @@
 energy:
   template:
     - base
-    - icon_energy
   styles:
     grid:
       - display: flex
@@ -15,6 +14,12 @@ energy:
       card:
         type: "custom:apexcharts-card"
         chart_type: "donut"
+        header:
+          show: true
+          title: >
+            [[[
+              return parseInt(states['sensor.power_consumption_1'].state) + parseInt(states['sensor.power_consumption_2'].state) + parseInt(states['sensor.power_consumption_3'].state) + parseInt(states['sensor.power_consumption_4'].state) + parseInt(states['sensor.power_consumption_5'].state) + parseInt(states['sensor.power_consumption_6'].state) + 'W';
+            ]]] 
         apex_config:
           chart:
             animations:
@@ -48,4 +53,15 @@ energy:
             }
             ha-card #graph svg path {
               stroke-width: 0;
+            }
+            ha-card #header {
+              position: absolute;
+              width: 100%;
+              padding: 0;
+              margin-top: 5%;
+              align-self: center;
+              text-align: center;
+            }
+            ha-card #header__title {
+              color: rgb(75, 82, 84);
             }
