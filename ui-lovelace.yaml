@@ -171,11 +171,11 @@ views:
               spaceBetween: 40
               threshold: 5
             cards:
-              #              - type: custom:button-card
-              #                entity: sensor.trakt_upcoming_shows
-              #                name: TV
-              #                template:
-              #                  - trakt
+              - type: custom:button-card
+                entity: sensor.trakt_upcoming_shows
+                name: TV
+                template:
+                  - trakt
 
               - type: grid
                 columns: 2

@@ -1,8 +1,68 @@
 trakt:
   template:
     - base
+  styles:
+    card:
+      - padding: 0
+      - overflow: hidden
+      - background-color: transparent
+      - border: none
+    grid:
+      - display: block
+      - height: 100%
+  show_name: false
+  show_state: false
   custom_fields:
     upcoming:
       card:
         type: "custom:upcoming-media-card"
         entity: "[[[ return entity.entity_id ]]]"
+        image_style: fanart
+        box_shadows: false
+        max: 4
+        clock: 24
+        date: ddmm
+        title_size: medium
+        line1_size: little
+        title_text: $title
+        line1_text: Released on $date
+        line2_text: " "
+        line3_text: " "
+        line4_text: " "
+        card_mod:
+          style: |
+            .type-custom-upcoming-media-card {
+              background: none !important;
+              box-shadow: none !important;
+              height: 100%;
+              display: block;
+            }
+
+            .type-custom-upcoming-media-card > div {
+              padding: 0px !important;
+              height: 100%;
+            }
+
+            .trak_fanart {
+              background-size: cover !important;
+              background-position: 50% 10% !important;
+              background-color: rgb(100, 100, 100);
+              background-blend-mode: multiply;
+              margin: 0 !important;
+              height: 25%;
+            }
+
+            .trak_svg_fanart {
+              margin-top: 5% !important;
+              margin-left: 6.5% !important;
+            }
+
+            .trak_fan_fanart {
+              background: none !important;
+              box-shadow: none !important;
+            }
+  card_mod:
+    style: |
+      #upcoming {
+        height:100%;
+      }
