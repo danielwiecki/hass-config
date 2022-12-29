@@ -1010,6 +1010,55 @@ icon_snowflake:
         `;
       ]]]
 
+icon_humidifier:
+  styles:
+    custom_fields:
+      icon:
+        - width: 77%
+  custom_fields:
+    icon: >
+      [[[
+        let state = variables.state_on ? 'on' : 'off';
+        return `
+          <svg viewBox="0 0 50 50">
+            <style>
+              .line {
+                stroke: var(--state-icon-color);
+                stroke-width: 2;
+                stroke-linejoin: round;
+              }
+              .indicator {
+                stroke-width: 1; 
+                stroke-linejoin: round; 
+                stroke: #555E63; 
+                fill: var(--state-icon-color);
+              }
+              .on.indicator {
+                fill: var(--state-icon-active-color);
+                stroke: var(--state-icon-active-color); 
+              }
+              .on.wavy {
+                animation: dash 2s linear forwards infinite;
+              }
+              @keyframes dash {
+                to {
+                  stroke-dashoffset: 0;
+                  opacity: 0%;
+                }
+              }
+            </style>
+
+            <g transform="matrix(2.023634, 0, 0, -2.023634, -3.485678, 41.014881)">
+              <path class="line" fill="var(--state-icon-color)" d="M 22.265 -2.792 L 5.765 -2.792 C 4.109 -2.792 2.765 -1.449 2.765 0.208 L 2.765 4.708 C 2.765 6.365 4.109 7.708 5.765 7.708 L 22.265 7.708 C 23.922 7.708 25.265 6.365 25.265 4.708 L 25.265 0.208 C 25.265 -1.449 23.922 -2.792 22.265 -2.792 Z"/>
+              <path class="indicator ${state}" fill="var(--state-icon-color)" d="M 6.339 6.966 L 6.339 5.943 C 6.339 5.67 6.487 5.411 6.748 5.219 C 7.01 5.026 7.365 4.919 7.734 4.919 L 20.29 4.919 C 20.659 4.919 21.014 5.026 21.276 5.219 C 21.539 5.411 21.684 5.67 21.684 5.943 L 21.684 6.966"/>
+              <path class="line wavy ${state}" fill="none" stroke-dasharray="9.4" stroke-dashoffset="9.4" d="M 5.894 18.943 C 6.457 18.38 6.773 17.617 6.773 16.822 C 6.773 16.026 6.457 15.263 5.894 14.701 C 5.616 14.422 5.395 14.092 5.244 13.728 C 5.093 13.364 5.015 12.973 5.015 12.579 C 5.015 12.185 5.093 11.795 5.244 11.431 C 5.389 11.082 5.598 10.763 5.861 10.491" fill: none;" transform="matrix(-1, 0, 0, -1, 11.788, 29.434001)"/>
+              <path class="line wavy ${state}" fill="none" stroke-dasharray="9.4" stroke-dashoffset="9.4" d="M 13.894 18.943 C 14.457 18.38 14.773 17.617 14.773 16.822 C 14.773 16.026 14.457 15.263 13.894 14.701 C 13.616 14.422 13.395 14.092 13.244 13.728 C 13.093 13.364 13.015 12.973 13.015 12.579 C 13.015 12.185 13.093 11.795 13.244 11.431 C 13.389 11.082 13.598 10.763 13.861 10.492" transform="matrix(-1, 0, 0, -1, 27.788, 29.435)"/>
+              <path class="line wavy ${state}" fill="none" stroke-dasharray="9.4" stroke-dashoffset="9.4" d="M 21.894 18.943 C 22.457 18.38 22.773 17.617 22.773 16.822 C 22.773 16.026 22.457 15.263 21.894 14.701 C 21.616 14.422 21.395 14.092 21.244 13.728 C 21.093 13.363 21.015 12.973 21.015 12.579 C 21.015 12.185 21.093 11.795 21.244 11.431 C 21.39 11.077 21.603 10.755 21.871 10.481" transform="matrix(-1, 0, 0, -1, 43.788, 29.424001)"/>
+            </g>
+          </svg>
+        `;
+      ]]]
+
 icon_closet:
   styles:
     custom_fields:

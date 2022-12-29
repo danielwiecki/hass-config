@@ -307,7 +307,7 @@ views:
                 entity: switch.lufterfrischer
                 name: Febreze 1
                 template:
-                  - icon_fan2
+                  - icon_humidifier
                   - base_small
                   - loader
 
@@ -315,7 +315,7 @@ views:
                 entity: switch.lufterfrischer_2
                 name: Febreze 2
                 template:
-                  - icon_fan2
+                  - icon_humidifier
                   - base_small
                   - loader
 
