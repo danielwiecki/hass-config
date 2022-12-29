@@ -6,7 +6,7 @@ base:
   variables:
     state_on: >
       [[[ 
-        return ['on', 'home', 'cool', 'fan_only', 'playing', 'unlocked', 'heat'].indexOf(!entity || entity.state) !== -1;
+        return ['on', 'home', 'cool', 'fan_only', 'playing', 'unlocked'].indexOf(!entity || entity.state) !== -1;
       ]]]
     state: >
       [[[ 

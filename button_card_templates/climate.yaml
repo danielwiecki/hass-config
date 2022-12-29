@@ -3,7 +3,7 @@ climate:
     - base
     - circle
   variables:
-    circle_input: "[[[ return entity.attributes.temperature ]]]"
+    circle_input: "[[[ return entity.attributes.hvac_action == 'off' ? entity.attributes.min_temp : entity.attributes.temperature ]]]"
     circle_min: "[[[ return entity.attributes.min_temp ]]]"
     circle_max: "[[[ return entity.attributes.max_temp ]]]"
     circle_step: "[[[ return entity.attributes.target_temp_step ]]]"

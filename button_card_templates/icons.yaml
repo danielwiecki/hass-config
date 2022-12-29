@@ -615,7 +615,7 @@ icon_ceiling_light:
                 transform-origin: center;
               }
             </style>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <svg viewBox="0 0 24 24">
               <path fill="var(--state-icon-color)" d="M8,9H11V4H13V9H16L20,17H4L8,9M14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18H14Z" />
             </svg>
             <path class="${state} light-color" d="m 8,9 c 8,0 0.7559689,0 8,0 l 4,8 H 4 L 8,9"/>
@@ -883,6 +883,7 @@ icon_heater:
     custom_fields:
       icon:
         - width: 77%
+        - margin-top: -5%
   custom_fields:
     icon: >
       [[[
@@ -942,20 +943,42 @@ icon_leaf:
               .on {
                 fill: #3a7f0d;
               }
-              .on-light {
+              .on.lighter {
                 fill: #49a010;
+              }
+              .on.circle {
+                animation: circle 4s infinite;
+                transform-origin: center;
+              }
+              @keyframes circle {
+                0% {
+                transform: scale(1);
+                }
+                20% {
+                  transform: scale(1.1);
+                }
+                40% {
+                  transform: scale(1);
+                }
+                70% {
+                  transform: scale(1.2);
+                }
+                90% {
+                  transform: scale(1);
+                }
+                100% {
+                  transform: scale(1);
+                }
               }
             </style>
 
-            <path class="${state}" fill="var(--state-icon-color)" d="M33.1.882s4.24 10.374-13.932 17.341C9.293 22.006 1.71 31.709 10.764 46.694c.751-6.698 3.967-21.467 17.793-24.837 0 0-12.868 4.812-14.006 26.595 6.613.928 22.122 1.552 26.727-11.906C47.358 18.763 33.1.882 33.1.882z"/>
-            <path class="${state}-light" fill="var(--state-icon-color)" d="M14.558 48.361c14.037-5.603 24.253-18.728 25.662-34.396C37.35 6.223 33.1.882 33.1.882s4.24 10.374-13.932 17.341C9.293 22.006 1.71 31.709 10.764 46.694c.751-6.698 3.967-21.467 17.793-24.837 0 0-12.832 4.8-13.999 26.504z"/>
-            <circle class="${state}" fill="var(--state-icon-color)" cx="9.364" cy="17.256" r="1.313"/>
-            <g class="${state}-light" fill="var(--state-icon-color)" transform="matrix(.095205 0 0 .095205 .752912 .881446)">
-              <circle cx="133.782" cy="158.2" r="9.846"/>
-              <circle cx="124.921" cy="64.662" r="24.615"/>
-              <circle cx="200.736" cy="120.785" r="7.877"/>
-              <circle cx="266.713" cy="76.477" r="22.646"/>
-            </g>
+            <path class="${state}" fill="var(--state-icon-color)" d="M 33.533 1.012 C 33.533 1.012 37.773 11.386 19.601 18.353 C 9.726 22.136 2.143 31.839 11.197 46.824 C 11.948 40.126 15.164 25.357 28.99 21.987 C 28.99 21.987 16.122 26.799 14.984 48.582 C 21.597 49.51 37.106 50.134 41.711 36.676 C 47.791 18.893 33.533 1.012 33.533 1.012 Z" />
+            <path class="${state} lighter" fill="var(--state-icon-color)" d="M 14.991 48.491 C 29.028 42.888 39.244 29.763 40.653 14.095 C 37.783 6.353 33.533 1.012 33.533 1.012 C 33.533 1.012 37.773 11.386 19.601 18.353 C 9.726 22.136 2.143 31.839 11.197 46.824 C 11.948 40.126 15.164 25.357 28.99 21.987 C 28.99 21.987 16.158 26.787 14.991 48.491 Z" />
+            <circle class="${state} circle" cx="9.797" cy="17.386" r="1.313" fill="var(--state-icon-color)"/>
+            <circle class="${state} circle" cx="13.922" cy="16.072" r="0.937" fill="var(--state-icon-color)"/>
+            <circle class="${state} circle" cx="13.078" cy="7.167" r="2.343" fill="var(--state-icon-color)"/>
+            <circle class="${state} circle" cx="20.296" cy="12.51" r="0.75" fill="var(--state-icon-color)"/>
+            <circle class="${state} circle" cx="26.578" cy="8.292" r="2.156" fill="var(--state-icon-color)"/>
           </svg>
         `;
       ]]]
@@ -1002,6 +1025,13 @@ icon_snowflake:
             <style>
               .on {
                 fill: #75d6ff;
+                animation: rotate 20s linear infinite;
+                transform-origin: center;
+              }
+              @keyframes rotate {
+                100% { 
+                  transform: rotate(360deg); 
+                } 
               }
             </style>
 
@@ -1376,8 +1406,7 @@ icon_ledstripe:
   styles:
     custom_fields:
       icon:
-        - width: 80%
-        - margin-left: -14%
+        - width: 70%
         - margin-top: 1%
   custom_fields:
     icon: >
