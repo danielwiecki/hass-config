@@ -1129,6 +1129,35 @@ icon_insectkiller:
         `;
       ]]]
 
+icon_charger:
+  custom_fields:
+    icon: >
+      [[[
+        let state = variables.state_on ? 'on' : 'off';
+        let animate = variables.state_on ? '<animate attributeName="width" values="0 ; 35.353 ; 35.353 ; 0" dur="9.5s" repeatCount="indefinite" />' : '';
+        return `
+          <svg viewBox="0 0 50 50">
+            <style>
+              .cls-1 {
+                fill: var(--state-icon-color);
+                stroke: var(--state-icon-color);
+              }
+              .power {
+                fill: var(--state-icon-color);
+              }
+              .on.power {
+                fill: var(--state-icon-active-color);
+              }
+            </style>
+
+            <path class="cls-1" d="M 48.919 29.276 C 48.924 30.746 47.731 31.94 46.26 31.935 L 46.26 35.258 C 46.254 37.088 44.772 38.571 42.941 38.58 L 4.398 38.58 C 2.564 38.575 1.08 37.09 1.075 35.258 L 1.075 15.323 C 1.08 13.489 2.564 12.005 4.398 12 L 42.941 12 C 44.773 12.005 46.259 13.489 46.264 15.323 L 46.264 18.643 C 47.733 18.641 48.924 19.834 48.919 21.303 L 48.919 29.276 Z M 46.26 29.276 L 46.26 21.303 L 43.604 21.303 L 43.604 15.323 C 43.607 14.953 43.308 14.655 42.941 14.657 L 4.398 14.657 C 4.03 14.652 3.729 14.953 3.734 15.323 L 3.734 35.258 C 3.729 35.628 4.03 35.929 4.398 35.921 L 42.941 35.921 C 43.309 35.926 43.609 35.628 43.605 35.258 L 43.605 29.276 L 46.26 29.276 Z"/>
+            <rect class="power ${state}" x="5.912" y="16.837" width="35.353" height="16.746">
+              ${animate}
+            </rect>
+          </svg>
+        `;
+      ]]]
+
 icon_closet:
   styles:
     custom_fields:

@@ -331,7 +331,7 @@ views:
                 entity: switch.wallpanel_battery
                 name: Wallpanel
                 template:
-                  - icon_fan2
+                  - icon_charger
                   - base_small
                   - loader
 
