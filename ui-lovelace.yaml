@@ -323,7 +323,7 @@ views:
                 entity: switch.insektenvernichter
                 name: Insektenvernichter
                 template:
-                  - icon_fan2
+                  - icon_insectkiller
                   - base_small
                   - loader
 
