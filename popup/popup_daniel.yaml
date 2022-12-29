@@ -31,8 +31,8 @@ browser_mod:
               }
           show_state: false
           entities:
-            - entity: binary_sensor.device_tracker_galaxy_s8_wifi
-              name: Wifi
+            - entity: device_tracker.galaxy_s8_2
+              name: Tado
               icon: mdi:wifi
               card_mod:
                 style: &state |
